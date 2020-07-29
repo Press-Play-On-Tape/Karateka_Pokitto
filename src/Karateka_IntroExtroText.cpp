@@ -162,7 +162,7 @@ void Game::extroText() {
 
     this->stateCounter++;
 
-    if (this->stateCounter == 180) {
+    if (this->stateCounter == 190) {
         this->gameStateDetails.setCurrState(GAME_STATE_FOLLOW_SEQUENCE);
     }
     

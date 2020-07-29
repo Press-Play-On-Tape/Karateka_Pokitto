@@ -12,13 +12,13 @@ using PD = Pokitto::Display;
 
 void Game::drawPrincessBackground_1() {
 
-    const uint8_t groundX[] = { 48, 62, 
-                                38, 72, 
-                                28, 82, 
-                                16, 94, 
-                                28, 82, 
-                                38, 72, 
-                                48, 62 };
+    const uint8_t groundX[] = { 46, 72, 
+                                38, 80, 
+                                30, 88, 
+                                20, 98, 
+                                30, 88, 
+                                38, 80, 
+                                46, 72 };
 
     uint8_t x = 0;
 

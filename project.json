@@ -23266,6 +23266,18 @@
 		},
 		"/src/images/archway/Arch_Door_03.png": {
 			"sdcard": false
+		},
+		"/music/karate11 - Kiai.raw": {
+			"sdcard": false
+		},
+		"/music/karate11.raw": {
+			"sdcard": false
+		},
+		"/music/karate09 - EagleAttack.raw": {
+			"sdcard": false
+		},
+		"/music/karate09.raw": {
+			"sdcard": false
 		}
 	},
 	"BUILDFlags": {

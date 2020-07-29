@@ -551,20 +551,6 @@ void Game::renderPrincessStance(int8_t x, int8_t y, uint8_t stance) {
 }
 
 
-/* ----------------------------------------------------------------------------
- *  Draw a horizontal dotted line. 
- *  
- *  So much nicer than a solid line!
- */
-void Game::drawHorizontalDottedLine(int x1, int x2, int y) {
-    
-    for (int z = x1; z <= x2; z+=2) {
-        // arduboy.drawPixel(z, y, WHITE);
-        PD::drawPixel(z, y);
-    }
-  
-}
-
 void Game::playSoundEffect(SoundEffect soundEffect) {
 
     switch (soundEffect) {

@@ -55,7 +55,6 @@ class Game {
         void renderEnemyStance(Entity &entity, int8_t x, int8_t y, uint8_t stance);
         void renderEnemyShadow(Entity &entity, int8_t x, int8_t y);
         void renderPrincessStance(int8_t x, int8_t y, uint8_t stance);
-        void drawHorizontalDottedLine(int x1, int x2, int y);
         void playSoundEffect(SoundEffect soundEffect);
         void playTheme(SoundTheme theme);
         void drawArchwayPoles(bool leftSide, bool left, uint8_t y);
