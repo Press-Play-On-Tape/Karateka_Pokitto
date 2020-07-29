@@ -1,0 +1,6 @@
+{
+    "board": "arduino:avr:leonardo",
+    "port": "COM3",
+    "sketch": "Karateka.ino",
+    "output": "../build"
+}
