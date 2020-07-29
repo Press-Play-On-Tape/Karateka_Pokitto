@@ -775,6 +775,7 @@ void Game::play_loop() {
 
                 case EntityType::Door:
                     this->enemy.setHealth(0);
+                    this->playTheme(SoundTheme::BreakingDoor);
                     break;
 
             }

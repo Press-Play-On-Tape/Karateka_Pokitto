@@ -91,7 +91,7 @@ enum class SoundTheme : uint8_t {
     DefeatEnemy,  
     PrincessLookingUp,  
     SendOutGuard,   
-    ExtroText, 
+    BreakingDoor,
     None,
 };
 

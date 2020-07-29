@@ -73,8 +73,8 @@ uint8_t Game::inStrikingRange(uint8_t action, Entity attacker, Entity target) {
     }
     else if (target.getEntityType() == EntityType::Door) {
 
-//printf("attach door %i %i \n", (uint8_t)action , distBetween);
-        // Attacking the door ..
+
+        // Breaking the door ..
 
         switch (action) {
 
@@ -494,17 +494,14 @@ void Game::renderEnemyStance(Entity &entity, int8_t x, int8_t y, uint8_t stance)
 
         case EntityType::Door:
 
-            if (entity.getHealth() == 0) {
-                
+            if (entity.getHealth() == 0) {                
                 entity.setActivity(entity.getActivity() + 1);
-
             }
 
             if (entity.getActivity() == 16) {
                 entity.setEntityType(EntityType::None);
             }
             else {
-                //printf("%i\n",entity.getActivity());
                 PD::drawBitmap(x, y, Images::Arch_Doors[entity.getActivity() / 4]);//, NOROT, FLIPH);
             }
 
@@ -632,7 +629,18 @@ void Game::playSoundEffect(SoundEffect soundEffect) {
 
 void Game::playTheme(SoundTheme theme) {
 
-    char sounds[12][19] = { "music/karate00.raw", "music/karate16.raw", "music/karate01.raw", "music/karate02.raw", "music/karate03.raw", "music/karate04.raw", "music/karate05.raw", "music/karate06.raw", "music/karate07.raw", "music/karate18.raw", "music/karate19.raw", "music/karate20.raw" };
+    char sounds[13][19] = { "music/karate00.raw", 
+                            "music/karate16.raw", 
+                            "music/karate01.raw", // 2
+                            "music/karate02.raw", 
+                            "music/karate03.raw", // 4
+                            "music/karate04.raw", 
+                            "music/karate05.raw", // 6
+                            "music/karate06.raw", 
+                            "music/karate07.raw", // 8
+                            "music/karate18.raw", 
+                            "music/karate19.raw", // 10
+                            "music/karate20.raw" };
 
     if (this->theme != theme) {
 
@@ -766,11 +774,9 @@ bool Game::canMoveCloser(Movement moverMovement, Entity entity, uint16_t distBet
     switch (entity.getEntityType()) {
 
         case EntityType::Door:
-            // printf("getDistToMove %i\n",distBetweenLookup_Door[static_cast<uint8_t>(moverMovement)]);
             return (distBetweenLookup_Door[static_cast<uint8_t>(moverMovement)] <= distBetween);
 
         default:
-            // printf("getDistToMove %i %i %i\n",distBetweenLookup_Normal[static_cast<uint8_t>(moverMovement)], enemy.getDistToMove(),distBetweenLookup_Normal[static_cast<uint8_t>(moverMovement)] + enemy.getDistToMove());
             return (distBetweenLookup_Normal[static_cast<uint8_t>(moverMovement)] + enemy.getDistToMove() <= distBetween);
 
     }

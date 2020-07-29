@@ -23236,6 +23236,36 @@
 		},
 		"\\src\\images\\archway\\Arch_Door_03.h": {
 			"sdcard": false
+		},
+		"/src/sound/karate20 - BreakDoor.mp3": {
+			"sdcard": false
+		},
+		"/src/sound/karate20.raw": {
+			"sdcard": false
+		},
+		"/src/images/archway/Arch_Door_00.h": {
+			"sdcard": false
+		},
+		"/src/images/archway/Arch_Door_00.png": {
+			"sdcard": false
+		},
+		"/src/images/archway/Arch_Door_01.h": {
+			"sdcard": false
+		},
+		"/src/images/archway/Arch_Door_01.png": {
+			"sdcard": false
+		},
+		"/src/images/archway/Arch_Door_02.h": {
+			"sdcard": false
+		},
+		"/src/images/archway/Arch_Door_02.png": {
+			"sdcard": false
+		},
+		"/src/images/archway/Arch_Door_03.h": {
+			"sdcard": false
+		},
+		"/src/images/archway/Arch_Door_03.png": {
+			"sdcard": false
 		}
 	},
 	"BUILDFlags": {
