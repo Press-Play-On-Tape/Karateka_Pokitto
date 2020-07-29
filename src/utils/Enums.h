@@ -63,6 +63,7 @@ enum class EntityType : uint8_t {
     EnemyThree,
     Emperor,
     Eagle,
+    Door,           // A door?  Why not ..
     Princess,
     Player,
 };

@@ -29,7 +29,10 @@ namespace Images {
     #include "Arch_RH5_6.h"
     #include "Arch_RH6.h"
 
-    #include "Arch_Door.h"
+    #include "Arch_Door_00.h"
+    #include "Arch_Door_01.h"
+    #include "Arch_Door_02.h"
+    #include "Arch_Door_03.h"
     #include "Stairs.h"
 
     const uint8_t * const Arch_LH5_Gates[] = { 
@@ -48,6 +51,13 @@ namespace Images {
         Arch_RH5_4,
         Arch_RH5_5,
         Arch_RH5_6,
+    };
+
+    const uint8_t * const Arch_Doors[] = { 
+        Arch_Door_00,
+        Arch_Door_01,
+        Arch_Door_02,
+        Arch_Door_03,
     };
 
 };

@@ -37,7 +37,7 @@ void Game::drawPrincessBackground_2(bool drawDoor) {
     PD::drawBitmap(0, 12, Images::Arch_RH1, NOROT, FLIPH);
     if (drawDoor) {
 
-        PD::drawBitmap(8, 20, Images::Arch_Door, NOROT, FLIPH);
+        PD::drawBitmap(8, 20, Images::Arch_Doors[0], NOROT, FLIPH);
 
     }
 
@@ -263,8 +263,8 @@ void Game::showScene() {
                 }
             
                 if (this->enemy.getXPosDisplay() < 110) {
-                    renderEnemyShadow(this->enemy.getEntityType(), this->enemy.getXPosDisplay(), this->enemy.getYPos());
-                    renderEnemyStance(this->enemy.getEntityType(), this->enemy.getXPosDisplay(), this->enemy.getYPos(), this->enemy.getStance());
+                    renderEnemyShadow(this->enemy, this->enemy.getXPosDisplay(), this->enemy.getYPos());
+                    renderEnemyStance(this->enemy, this->enemy.getXPosDisplay(), this->enemy.getYPos(), this->enemy.getStance());
                 }
 
                 break;

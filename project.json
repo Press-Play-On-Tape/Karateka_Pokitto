@@ -22363,6 +22363,879 @@
 		},
 		"/Karateka_Pokitto.bin.12.h": {
 			"sdcard": false
+		},
+		"\\Ani-Fighter-Entering.gif": {
+			"sdcard": false
+		},
+		"\\Ani-Princess-2.gif": {
+			"sdcard": false
+		},
+		"\\Ani-Princess.gif": {
+			"sdcard": false
+		},
+		"\\Ani-TheBigKiss.gif": {
+			"sdcard": false
+		},
+		"\\Archive.zip": {
+			"sdcard": false
+		},
+		"\\Karateka_EOG.bin": {
+			"sdcard": false
+		},
+		"\\Karateka_Pokitto.bin.12.h": {
+			"sdcard": false
+		},
+		"\\Karateka_Pokitto.bin.12.png": {
+			"sdcard": false
+		},
+		"\\distibutable\\Karateka_Pokitto.bin": {
+			"sdcard": false
+		},
+		"\\music\\karate01.img": {
+			"sdcard": false
+		},
+		"\\music\\karate00.raw": {
+			"sdcard": false
+		},
+		"\\music\\karate02.img": {
+			"sdcard": false
+		},
+		"\\music\\karate02.raw": {
+			"sdcard": false
+		},
+		"\\music\\karate01.raw": {
+			"sdcard": false
+		},
+		"\\music\\karate03.img": {
+			"sdcard": false
+		},
+		"\\music\\karate03.raw": {
+			"sdcard": false
+		},
+		"\\music\\karate04.raw": {
+			"sdcard": false
+		},
+		"\\music\\karate06.raw": {
+			"sdcard": false
+		},
+		"\\music\\karate16.raw": {
+			"sdcard": false
+		},
+		"\\music\\karate05.raw": {
+			"sdcard": false
+		},
+		"\\music\\karate07.raw": {
+			"sdcard": false
+		},
+		"\\music\\karate18.raw": {
+			"sdcard": false
+		},
+		"\\music\\karate17.raw": {
+			"sdcard": false
+		},
+		"\\music\\karate19.raw": {
+			"sdcard": false
+		},
+		"\\src\\Karateka_IntroExtroText.cpp": {
+			"sdcard": false
+		},
+		"\\src\\images\\font": {
+			"sdcard": false
+		},
+		"\\src\\sound\\karate18 - PrincessLookingUp.raw": {
+			"sdcard": false
+		},
+		"\\src\\sound\\karate16 - IntroPrincessCrying.raw": {
+			"sdcard": false
+		},
+		"\\src\\sound\\karate17 - Kissing Scene.raw": {
+			"sdcard": false
+		},
+		"\\src\\sound\\karate19 - SendOutGuard.raw": {
+			"sdcard": false
+		},
+		"\\src\\utils\\GameSequence.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\archway\\Arch_Door.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\archway\\Arch_Door.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\archway\\KaratekaDoorFrame.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\archway\\KaratekaDoorFrame.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\archway\\Stairs.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\archway\\Stairs.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\bam\\Bam.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\bam\\Bam.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\bam\\Bam_CrossHairs.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\bam\\Bam_CrossHairs.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyThree": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Chars.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Chars8bpp": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Char_a.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Char_b.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Char_a.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Char_b.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Char_border.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Char_c.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Char_border.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Char_c.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Char_colon.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Char_colon.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Char_comma.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Char_comma.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Char_d.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Char_d.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Char_dash.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Char_dash.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Char_e.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Char_f.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Char_e.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Char_f.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Char_g.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Char_g.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Char_h.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Char_i.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Char_h.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Char_i.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Char_j.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Char_j.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Char_k.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Char_l.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Char_k.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Char_l.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Char_m.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Char_m.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Char_n.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Char_o.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Char_n.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Char_o.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Char_p.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Char_period.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Char_p.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Char_period.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Char_q.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Char_q.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Char_r.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Char_r.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Char_s.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Char_s.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Char_t.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Char_spacer.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Char_t.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Char_spacer.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Char_u.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Char_v.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Char_v.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Char_u.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Char_w.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Char_w.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Char_x.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Char_x.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Char_y.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Char_y.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Char_z.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Char_z.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\font.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\font.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\ppot\\ConvertImg.js": {
+			"sdcard": false
+		},
+		"\\src\\images\\princess\\Princesses.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\princess\\Princess_Falling_00.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\princess\\Princess_Falling_00.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\princess\\Princess_Falling_01.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\princess\\Princess_Falling_02.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\princess\\Princess_Falling_01.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\princess\\Princess_Falling_02.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\princess\\Princess_Lying.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\princess\\Princess_Lying.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\princess\\Princess_Sitting_Body.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\princess\\Princess_Sitting_Body.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\princess\\Princess_Sitting_LookingDown.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\princess\\Princess_Sitting_LookingDown.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\princess\\Princess_Sitting_LookingUp.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\princess\\Princess_Sitting_LookingUp.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\princess\\Princess_Turning.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\princess\\Princess_Walking_00.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\princess\\Princess_Turning.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\princess\\Princess_Walking_01.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\princess\\Princess_Walking_01.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\princess\\Princess_Walking_00.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\princess\\Princess_Walking_02.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\princess\\Princess_Walking_02.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\princess\\Princess_Walking_Top.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\princess\\Princess_Walking_Top.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\scenery\\Backdrop_00.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\scenery\\Backdrop_00.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\scenery\\Backdrop_01.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\scenery\\Backdrop_02.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\scenery\\Backdrop_01.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\scenery\\Backdrop_02.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\scenery\\Floor_Blue.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\scenery\\Floor_Blue.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\title\\ConvertImg.js": {
+			"sdcard": false
+		},
+		"\\src\\images\\title\\Test.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\title\\ConvertImg2.js": {
+			"sdcard": false
+		},
+		"\\src\\images\\title\\Test.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyCommon\\EnemyCommon_00_Idle_00.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyCommon\\EnemyCommon_00_Idle_01.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyCommon\\EnemyCommon_00_Idle_00.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyCommon\\EnemyCommon_00_Idle_01.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyThree\\EnemyThree_00.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyThree\\EnemyThree_00.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyThree\\EnemyThree_01.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyThree\\EnemyThree_01.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyThree\\EnemyThree_02.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyThree\\EnemyThree_02.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyThree\\EnemyThree_03.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyThree\\EnemyThree_03.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyThree\\EnemyThree_04.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyThree\\EnemyThree_04.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyThree\\EnemyThree_05.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyThree\\EnemyThree_05.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyThree\\EnemyThree_06.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyThree\\EnemyThree_06.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyThree\\EnemyThree_07.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyThree\\EnemyThree_07.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyThree\\EnemyThree_08.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyThree\\EnemyThree_08.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyThree\\EnemyThree_09.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyThree\\EnemyThree_09.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyThree\\EnemyThree_10.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyThree\\EnemyThree_10.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyThree\\EnemyThree_11.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyThree\\EnemyThree_11.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyThree\\EnemyThree_12.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyThree\\EnemyThree_12.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyThree\\EnemyThree_13.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyThree\\EnemyThree_13.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyThree\\EnemyThree_14.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyThree\\EnemyThree_14.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyThree\\EnemyThree_15.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyThree\\EnemyThree_15.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyThree\\EnemyThree_16.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyThree\\EnemyThree_16.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyThree\\EnemyThree_17.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyThree\\EnemyThree_17.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyThree\\EnemyThree_18.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyThree\\EnemyThree_18.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyThree\\EnemyThree_19.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyThree\\EnemyThree_19.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyThree\\EnemyThree_20.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyThree\\EnemyThree_20.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyThree\\EnemyThree_21.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyThree\\EnemyThree_21.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyThree\\EnemyThree_22.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyThree\\EnemyThree_22.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyThree\\EnemyThree_23.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyThree\\EnemyThree_23.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyThree\\EnemyThree_24.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyThree\\EnemyThree_24.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyThree\\EnemyThree_25.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyThree\\EnemyThree_25.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyThree\\EnemyThree_26.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyThree\\EnemyThree_26.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyThree\\EnemyThree_27.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyThree\\EnemyThree_27.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyThree\\EnemyThree_28.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyThree\\EnemyThree_28.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyThree\\EnemyThree_29.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyThree\\EnemyThree_29.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyThree\\EnemyThree_30.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyThree\\EnemyThree_30.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyThree\\EnemyThree_31.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyThree\\EnemyThree_42.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyThree\\EnemyThree_31.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyThree\\EnemyThree_42.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyThree\\EnemyThree_43.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyThree\\EnemyThree_43.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyThree\\EnemyThree_44.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyThree\\EnemyThree_45.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyThree\\EnemyThree_46.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyThree\\EnemyThree_44.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyThree\\EnemyThree_45.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyThree\\EnemyThree_47.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyThree\\EnemyThree_46.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyThree\\EnemyThree_47.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyThree\\EnemyThree_48.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyThree\\EnemyThree_48.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyThree\\EnemyThree_49.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyThree\\EnemyThree_67.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyThree\\EnemyThree_67.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyThree\\EnemyThree_49.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyThree\\EnemyThree_68.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyThree\\EnemyThree_68.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyThree\\Karateka_Emperor.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyThree\\EnemyThree_69.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyThree\\EnemyThree_69.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\enemyThree\\Karateka_Emperor.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\player\\Fullbody11.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\player\\Fullbody11.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\player\\Fullbody12.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\player\\Fullbody12.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\player\\Karateka_NormalArchwayPreviewV3.gif": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\player\\Player_00_Idle_00.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\player\\Player_00_Idle_01.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\player\\Player_00_Idle_00.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\fighters\\player\\Player_00_Idle_01.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Chars8bpp\\Char_a.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Chars8bpp\\Char_b.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Chars8bpp\\Char_c.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Chars8bpp\\Char_border.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Chars8bpp\\Char_colon.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Chars8bpp\\Char_comma.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Chars8bpp\\Char_d.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Chars8bpp\\Char_dash.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Chars8bpp\\Char_e.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Chars8bpp\\Char_f.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Chars8bpp\\Char_g.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Chars8bpp\\Char_h.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Chars8bpp\\Char_k.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Chars8bpp\\Char_i.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Chars8bpp\\Char_j.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Chars8bpp\\Char_l.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Chars8bpp\\Char_m.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Chars8bpp\\Char_o.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Chars8bpp\\Char_p.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Chars8bpp\\Char_period.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Chars8bpp\\Char_n.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Chars8bpp\\Char_q.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Chars8bpp\\Char_r.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Chars8bpp\\Char_s.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Chars8bpp\\Char_t.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Chars8bpp\\Char_u.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Chars8bpp\\Char_Spacer.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Chars8bpp\\Char_v.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Chars8bpp\\Char_w.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Chars8bpp\\Char_x.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Chars8bpp\\Char_z.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Chars8bpp\\Char_y.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\font\\Chars8bpp\\font.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\archway\\Arch_Door - Copy.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\archway\\Arch_Door_01.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\archway\\Arch_Door_00.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\archway\\Arch_Door_02.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\archway\\Arch_Door_03.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\archway\\Arch_Door_01.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\archway\\Arch_Door_00.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\archway\\Arch_Door_02.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\archway\\Arch_Door_03.h": {
+			"sdcard": false
 		}
 	},
 	"BUILDFlags": {

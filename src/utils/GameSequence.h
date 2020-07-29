@@ -13,7 +13,7 @@ const uint8_t gameSequence[] = {
   //                                              4 = RH2     3=Person3                                                                                          allows player to attack         even if not too close?
   //                                              5 = LH3     4=Emperor                                                                                          more.
   //                                              6 = RH3     5=Eagle 
-  //                                              5 = LH4                  
+  //                                              5 = LH4     6=KickDoor             
   //                                              6 = RH4      
   //                                              9 = LH Gate                 
   //                                             10 = RH Gate  
@@ -59,7 +59,7 @@ const uint8_t gameSequence[] = {
     GAME_STATE_PLAY_INIT,                   0,      0,          3,          0,         55,                  2,              0,          XPOSOVERALL_NO_CHANGE,   IMMEDIATE_ACTION_FREQUENT,      RETREAT_ACTION_INFREQUENT,  ACTION_KICK_PREF,       MOVE_FWD_FREQUENT,
     GAME_STATE_ENEMY_APPROACH_INIT,         0,      0,          4,          0,         50,                  2,              0,          XPOSOVERALL_NO_CHANGE,   IMMEDIATE_ACTION_FREQUENT,      RETREAT_ACTION_NORMAL,      ACTION_NO_PREF,         MOVE_FWD_FREQUENT,
     GAME_STATE_PLAY_INIT,                   0,      0,          4,          0,         50,                  2,              0,          XPOSOVERALL_NO_CHANGE,   IMMEDIATE_ACTION_FREQUENT,      RETREAT_ACTION_NORMAL,      ACTION_NO_PREF,         MOVE_FWD_FREQUENT,
-    GAME_STATE_GO_THROUGH_GATE,             0,      2,          0,          0,          0,                  2,              0,          XPOSOVERALL_NO_CHANGE,   0,                              0,                          0,                      0,
+    GAME_STATE_GO_THROUGH_GATE,             0,      2,          6,          0,          0,                  2,              0,          XPOSOVERALL_NO_CHANGE,   0,                              0,                          0,                      0,
     GAME_STATE_FINAL_SCENE_INIT,            0,      0,          0,          0,          0,                  0,              0,          XPOSOVERALL_NO_CHANGE,   0,                              0,                          0,                      0,
     GAME_STATE_EXTRO_TEXT_INIT,             0,      0,          0,          0,          0,                  1,              0,          XPOSOVERALL_NO_CHANGE,   0,                              0,                          0,                      0,
     GAME_STATE_THE_END,                     0,      0,          0,          0,          0,                  0,              0,          XPOSOVERALL_NO_CHANGE,   0,                              0,                          0,                      0,

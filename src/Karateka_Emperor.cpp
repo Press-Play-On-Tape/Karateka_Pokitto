@@ -136,8 +136,8 @@ void Game::emperor_loop() {
         }
 
         PD::drawBitmap(8, 17, Images::Arch_LH1, NOROT, FLIPH);
-        renderEnemyShadow(this->enemy.getEntityType(), this->enemy.getXPosDisplay(), this->enemy.getYPos());
-        renderEnemyStance(this->enemy.getEntityType(), this->enemy.getXPosDisplay(), this->enemy.getYPos(), this->enemy.getStance());
+        renderEnemyShadow(this->enemy, this->enemy.getXPosDisplay(), this->enemy.getYPos());
+        renderEnemyStance(this->enemy, this->enemy.getXPosDisplay(), this->enemy.getYPos(), this->enemy.getStance());
         PD::drawBitmap(0, 12, Images::Arch_RH1, NOROT, FLIPH);
         
     }

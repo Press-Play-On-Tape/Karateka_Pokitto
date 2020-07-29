@@ -379,7 +379,7 @@ void Game::playerMovements() {
                             if ((PC::buttons.pressed(BTN_RIGHT) || PC::buttons.repeat(BTN_RIGHT, 1)) && 
                                 (!PC::buttons.pressed(BTN_A) || PC::buttons.repeat(BTN_A, 1)) && 
                                 (!PC::buttons.pressed(BTN_B) || PC::buttons.repeat(BTN_B, 1)) &&
-                                (this->canMoveCloser(Movement::Sidle_Forward_SML, this->enemy, distBetween) || (!this->enemy.isNormalEnemy()))) {
+                                (this->canMoveCloser(Movement::Sidle_Forward_SML, this->enemy, distBetween) || (!this->enemy.isNormalEnemyOrDoor()))) {
 
                                 this->player.setXPosDelta(-MAIN_SCENE_X_SIDLING_2_DELTA); 
                                 this->player.pop();
@@ -407,7 +407,7 @@ void Game::playerMovements() {
                             if ((PC::buttons.pressed(BTN_RIGHT) || PC::buttons.repeat(BTN_RIGHT, 1)) && 
                                 (!PC::buttons.pressed(BTN_A) || PC::buttons.repeat(BTN_A, 1)) && 
                                 (!PC::buttons.pressed(BTN_B) || PC::buttons.repeat(BTN_B, 1)) &&
-                                (this->canMoveCloser(Movement::Sidle_Forward_MED, this->enemy, distBetween) || (!this->enemy.isNormalEnemy()))) {
+                                (this->canMoveCloser(Movement::Sidle_Forward_MED, this->enemy, distBetween) || (!this->enemy.isNormalEnemyOrDoor()))) {
 
                                 this->player.pop();
                                 this->player.push(STANCE_SIDLING_1_1, STANCE_SIDLING_1, false);
@@ -432,7 +432,7 @@ void Game::playerMovements() {
                         if (this->player.getCount() == 1) {
 
                             if (PC::buttons.pressed(BTN_RIGHT) || PC::buttons.repeat(BTN_RIGHT, 1) && 
-                                (this->canMoveCloser(Movement::Sidle_Forward_LRG, this->enemy, distBetween) || (!this->enemy.isNormalEnemy()))) {
+                                (this->canMoveCloser(Movement::Sidle_Forward_LRG, this->enemy, distBetween) || (!this->enemy.isNormalEnemyOrDoor()))) {
 
                                 this->player.setMovement(Movement::Sidle_Forward_LRG);
                                 this->player.pop();

@@ -40,7 +40,7 @@ uint8_t Game::inStrikingRange(uint8_t action, Entity attacker, Entity target) {
         return 0;
 
     }
-    else {
+    else if (target.getEntityType() == EntityType::Eagle) {
 
 
         // Attacking eagle ..
@@ -64,6 +64,37 @@ uint8_t Game::inStrikingRange(uint8_t action, Entity attacker, Entity target) {
 
             case ACTION_HIGH_KICK:
                 return (distBetween >= 48 && distBetween <= 74 && target.getYPos() == EAGLE_LEVEL_HIGH ? DAMAGE_3_POINT : 0); 
+
+            default:
+                return 0; 
+
+        }
+
+    }
+    else if (target.getEntityType() == EntityType::Door) {
+
+//printf("attach door %i %i \n", (uint8_t)action , distBetween);
+        // Attacking the door ..
+
+        switch (action) {
+
+            case ACTION_LOW_PUNCH:
+                return (distBetween > 46 && distBetween <= 60 ? DAMAGE_3_POINT : 0); 
+
+            case ACTION_MED_PUNCH:
+                return (distBetween > 46 && distBetween <= 60 ? DAMAGE_3_POINT : 0); 
+
+            case ACTION_HIGH_PUNCH:
+                return (distBetween > 46 && distBetween <= 60 ? DAMAGE_3_POINT : 0); 
+
+            case ACTION_LOW_KICK:
+                return (distBetween >= 44 && distBetween <= 54 ? DAMAGE_3_POINT : 0); 
+
+            case ACTION_MED_KICK:
+                return (distBetween >= 42 && distBetween <= 58 ? DAMAGE_3_POINT : 0);  //
+
+            case ACTION_HIGH_KICK:
+                return (distBetween >= 48 && distBetween <= 56 ? DAMAGE_3_POINT : 0); 
 
             default:
                 return 0; 
@@ -183,9 +214,9 @@ void Game::renderPlayerStance(int8_t x, int8_t y, uint8_t stance) {
 }
 
 
-void Game::renderEnemyStance(EntityType entityType, int8_t x, int8_t y, uint8_t stance) {
+void Game::renderEnemyStance(Entity &entity, int8_t x, int8_t y, uint8_t stance) {
 
-    switch (entityType) {
+    switch (entity.getEntityType()) {
 
         case EntityType::EnemyOne:
             {
@@ -461,14 +492,33 @@ void Game::renderEnemyStance(EntityType entityType, int8_t x, int8_t y, uint8_t 
 
             break;
 
+        case EntityType::Door:
+
+            if (entity.getHealth() == 0) {
+                
+                entity.setActivity(entity.getActivity() + 1);
+
+            }
+
+            if (entity.getActivity() == 16) {
+                entity.setEntityType(EntityType::None);
+            }
+            else {
+                //printf("%i\n",entity.getActivity());
+                PD::drawBitmap(x, y, Images::Arch_Doors[entity.getActivity() / 4]);//, NOROT, FLIPH);
+            }
+
+            break;
+
+
     }
 
 }
 
 
-void Game::renderEnemyShadow(EntityType entityType, int8_t x, int8_t y) {
+void Game::renderEnemyShadow(Entity &entity, int8_t x, int8_t y) {
 
-    switch (entityType) {
+    switch (entity.getEntityType()) {
 
         case EntityType::Eagle:
             PD::drawBitmap(x, 74, Images::Eagle_Shadow);
@@ -637,10 +687,21 @@ void Game::colourEnemyImage(const uint8_t * image, EntityType entityType) {
 
             for (uint16_t i = 2; i<  imageSize; i++) {
 
-                if ((imageToColour[i] & 0x0F) == 0x07)  imageToColour[i] = (imageToColour[i] & 0xF0) | 0x09;            
-                if ((imageToColour[i] & 0xF0) == 0x70)  imageToColour[i] = (imageToColour[i] & 0x0F) | 0x90;
-                if ((imageToColour[i] & 0x0F) == 0x0C)  imageToColour[i] = (imageToColour[i] & 0xF0) | 0x0F;            
-                if ((imageToColour[i] & 0xF0) == 0xC0)  imageToColour[i] = (imageToColour[i] & 0x0F) | 0xF0;
+                {
+                    uint8_t lowByte = (imageToColour[i] & 0x0F);
+
+                    if (lowByte == 0x07)        imageToColour[i] = (imageToColour[i] & 0xF0) | 0x09;            
+                    else if (lowByte == 0x0C)   imageToColour[i] = (imageToColour[i] & 0xF0) | 0x0F;            
+
+                }
+
+                {
+                    uint8_t highByte = (imageToColour[i] & 0xF0);
+
+                    if (highByte == 0x70)       imageToColour[i] = (imageToColour[i] & 0x0F) | 0x90;
+                    else if (highByte == 0xC0)  imageToColour[i] = (imageToColour[i] & 0x0F) | 0xF0;
+
+                }
 
             }            
 
@@ -648,12 +709,23 @@ void Game::colourEnemyImage(const uint8_t * image, EntityType entityType) {
 
         case EntityType::EnemyThree:
 
-            for (uint16_t i = 2; i<  imageSize; i++) {
+            for (uint16_t i = 2; i < imageSize; i++) {
 
-                if ((imageToColour[i] & 0x0F) == 0x0C)  imageToColour[i] = (imageToColour[i] & 0xF0) | 0x0F;            
-                if ((imageToColour[i] & 0xF0) == 0xC0)  imageToColour[i] = (imageToColour[i] & 0x0F) | 0xF0;
-                // if ((imageToColour[i] & 0x0F) == 0x07)  imageToColour[i] = (imageToColour[i] & 0xF0) | 0x04;            
-                // if ((imageToColour[i] & 0xF0) == 0x70)  imageToColour[i] = (imageToColour[i] & 0x0F) | 0x40;
+                {
+                    uint8_t lowByte = (imageToColour[i] & 0x0F);
+
+                    if (lowByte == 0x09)        imageToColour[i] = (imageToColour[i] & 0xF0) | 0x0D;            
+                    else if (lowByte == 0x07)   imageToColour[i] = (imageToColour[i] & 0xF0) | 0x0D;            
+                    else if (lowByte == 0x0C)   imageToColour[i] = (imageToColour[i] & 0xF0) | 0x0F;     
+                }
+                
+                {
+                    uint8_t highByte = (imageToColour[i] & 0xF0);
+
+                    if (highByte == 0x90)       imageToColour[i] = (imageToColour[i] & 0x0F) | 0xD0;
+                    else if (highByte == 0x70)  imageToColour[i] = (imageToColour[i] & 0x0F) | 0xD0;
+                    else if (highByte == 0xC0)  imageToColour[i] = (imageToColour[i] & 0x0F) | 0xF0;
+                }
 
             }            
 
@@ -661,27 +733,48 @@ void Game::colourEnemyImage(const uint8_t * image, EntityType entityType) {
 
     }
 
-
 }
 
+#define DISTANCE_BETWEEN_MINIMUM_DOOR 44
 #define DISTANCE_BETWEEN_MINIMUM 30
 #define DISTANCE_TRAVELLED_TINY 5
 #define DISTANCE_TRAVELLED_SML 6
 #define DISTANCE_TRAVELLED_MED 29
 #define DISTANCE_TRAVELLED_LRG 71
 
-const uint8_t distBetweenLookup[] = { 
+const uint8_t distBetweenLookup_Normal[] = { 
     DISTANCE_BETWEEN_MINIMUM + DISTANCE_TRAVELLED_TINY, 
-    DISTANCE_BETWEEN_MINIMUM + DISTANCE_TRAVELLED_SML,  // 12
-    DISTANCE_BETWEEN_MINIMUM + DISTANCE_TRAVELLED_MED,  // 18
-    DISTANCE_BETWEEN_MINIMUM + DISTANCE_TRAVELLED_LRG,  // 24
-    DISTANCE_BETWEEN_MINIMUM + DISTANCE_TRAVELLED_TINY,  // 30
-    DISTANCE_BETWEEN_MINIMUM + DISTANCE_TRAVELLED_TINY,  // 30
+    DISTANCE_BETWEEN_MINIMUM + DISTANCE_TRAVELLED_SML,  
+    DISTANCE_BETWEEN_MINIMUM + DISTANCE_TRAVELLED_MED,  
+    DISTANCE_BETWEEN_MINIMUM + DISTANCE_TRAVELLED_LRG,  
+    DISTANCE_BETWEEN_MINIMUM + DISTANCE_TRAVELLED_TINY, 
+    DISTANCE_BETWEEN_MINIMUM + DISTANCE_TRAVELLED_TINY, 
+};
+
+const uint8_t distBetweenLookup_Door[] = { 
+    DISTANCE_BETWEEN_MINIMUM_DOOR + DISTANCE_TRAVELLED_TINY, 
+    DISTANCE_BETWEEN_MINIMUM_DOOR + DISTANCE_TRAVELLED_SML,  
+    DISTANCE_BETWEEN_MINIMUM_DOOR + DISTANCE_TRAVELLED_MED,  
+    DISTANCE_BETWEEN_MINIMUM_DOOR + DISTANCE_TRAVELLED_LRG + 30,
+    DISTANCE_BETWEEN_MINIMUM_DOOR + DISTANCE_TRAVELLED_TINY,  
+    DISTANCE_BETWEEN_MINIMUM_DOOR + DISTANCE_TRAVELLED_TINY,  
 };
 
 
 bool Game::canMoveCloser(Movement moverMovement, Entity entity, uint16_t distBetween) {
-    return (distBetweenLookup[static_cast<uint8_t>(moverMovement)] + enemy.getDistToMove() <= distBetween);
+
+    switch (entity.getEntityType()) {
+
+        case EntityType::Door:
+            // printf("getDistToMove %i\n",distBetweenLookup_Door[static_cast<uint8_t>(moverMovement)]);
+            return (distBetweenLookup_Door[static_cast<uint8_t>(moverMovement)] <= distBetween);
+
+        default:
+            // printf("getDistToMove %i %i %i\n",distBetweenLookup_Normal[static_cast<uint8_t>(moverMovement)], enemy.getDistToMove(),distBetweenLookup_Normal[static_cast<uint8_t>(moverMovement)] + enemy.getDistToMove());
+            return (distBetweenLookup_Normal[static_cast<uint8_t>(moverMovement)] + enemy.getDistToMove() <= distBetween);
+
+    }
+
 }
 
 
@@ -689,7 +782,7 @@ Movement Game::getLargestMove(Entity entity, uint16_t distBetween) {
 
     for (uint8_t i = 6; i > 0; i--) {
 
-        uint8_t lookup = distBetweenLookup[ i - 1 ];
+        uint8_t lookup = distBetweenLookup_Normal[ i - 1 ];
         
         if (lookup + entity.getDistToMove() < distBetween) {
             return static_cast<Movement>(i - 1);

@@ -52,8 +52,8 @@ class Game {
         uint8_t getActionFromStance(uint8_t stance);
         void renderPlayerStance(int8_t x, int8_t y, uint8_t stance);
         void returnFromAction(uint8_t action, uint8_t returnAction);
-        void renderEnemyStance(EntityType entityType, int8_t x, int8_t y, uint8_t stance);
-        void renderEnemyShadow(EntityType entityType, int8_t x, int8_t y);
+        void renderEnemyStance(Entity &entity, int8_t x, int8_t y, uint8_t stance);
+        void renderEnemyShadow(Entity &entity, int8_t x, int8_t y);
         void renderPrincessStance(int8_t x, int8_t y, uint8_t stance);
         void drawHorizontalDottedLine(int x1, int x2, int y);
         void playSoundEffect(SoundEffect soundEffect);

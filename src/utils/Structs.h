@@ -241,6 +241,12 @@ struct Entity {
             
         }
 
+        bool isNormalEnemyOrDoor() {
+
+            return this->getEntityType() == EntityType::EnemyOne || this->getEntityType() == EntityType::EnemyTwo || this->getEntityType() == EntityType::EnemyThree || this->getEntityType() == EntityType::Emperor || this->getEntityType() == EntityType::Door;
+            
+        }
+
 
       	uint8_t getCount(void) {
             return this->stack->getCount();

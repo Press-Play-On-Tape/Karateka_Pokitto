@@ -214,7 +214,6 @@ void Game::play_loop() {
     renderPlayerStance(player.getXPosDisplay(), player.getYPos(), zzz);
     enemy.setXPos(116);
     enemy.setYPos(79);
-//    renderEnemyStance(EntityType::EnemyOne, 58, 79, yyy);
     renderEnemyStance(EntityType::EnemyOne, enemy.getXPosDisplay(), enemy.getYPos(), yyy);
     PD::setCursor(0,0);
     PD::print("X: ");
@@ -496,7 +495,6 @@ void Game::play_loop() {
             }
          
             this->enemy.setXPos(this->enemy.getXPos() + this->player.getXPosDelta());
-            // printf(">5\n");        
 
             //this->gameStateDetails.archXPos = archXPos + this->player.getXPosDelta() / 2;
 
@@ -548,13 +546,13 @@ void Game::play_loop() {
             PD::drawBitmap(this->gameStateDetails.archXPos + 2, 17, Images::Arch_LH1);
             break;
 
-        case ARCH_LEFT_HAND_2:
-            PD::drawBitmap(this->gameStateDetails.archXPos + 17, 24, Images::Arch_LH2, NOROT, FLIPH);
-            break;
+        // case ARCH_LEFT_HAND_2:
+        //     PD::drawBitmap(this->gameStateDetails.archXPos + 17, 24, Images::Arch_LH2, NOROT, FLIPH);
+        //     break;
 
-        case ARCH_RIGHT_HAND_2:
-            PD::drawBitmap(this->gameStateDetails.archXPos - 5, 24, Images::Arch_LH2);
-            break;
+        // case ARCH_RIGHT_HAND_2:
+        //     PD::drawBitmap(this->gameStateDetails.archXPos - 5, 24, Images::Arch_LH2);
+        //     break;
 
         case ARCH_LEFT_HAND_3:
             PD::drawBitmap(this->gameStateDetails.archXPos + 2, 7, Images::Arch_LH3, NOROT, FLIPH);
@@ -568,9 +566,9 @@ void Game::play_loop() {
             PD::drawBitmap(this->gameStateDetails.archXPos + 17, 14, Images::Arch_LH4, NOROT, FLIPH);
             break;
 
-        case ARCH_RIGHT_HAND_4:
-            PD::drawBitmap(this->gameStateDetails.archXPos - 5, 14, Images::Arch_LH4);
-            break;
+        // case ARCH_RIGHT_HAND_4:
+        //     PD::drawBitmap(this->gameStateDetails.archXPos - 5, 14, Images::Arch_LH4);
+        //     break;
 
         case ARCH_LEFT_HAND_GATE:
             PD::drawBitmap(this->gameStateDetails.archXPos - 9, 2, Images::Arch_LH5, NOROT, FLIPH);
@@ -607,17 +605,18 @@ void Game::play_loop() {
     }
 
     if (this->enemy.getXPosDelta() != 0 && PC::frameCount % 2 == 0) this->enemy.setXPos(this->enemy.getXPos() + this->enemy.getXPosDelta()); 
-    renderPlayerStance(this->player.getXPosDisplay(), this->player.getYPos(), this->player.getStance());
-    
+
     if (this->enemy.getEntityType() != EntityType::None && this->enemy.getXPosDisplay() < 110) {
-        renderEnemyShadow(this->enemy.getEntityType(), this->enemy.getXPosDisplay(), this->enemy.getYPos());
-        renderEnemyStance(this->enemy.getEntityType(), this->enemy.getXPosDisplay(), this->enemy.getYPos(), this->enemy.getStance());
+        renderEnemyShadow(this->enemy, this->enemy.getXPosDisplay(), this->enemy.getYPos());
+        renderEnemyStance(this->enemy, this->enemy.getXPosDisplay(), this->enemy.getYPos(), this->enemy.getStance());
     }
     
     if (this->gameStateDetails.prevState == GAME_STATE_GO_THROUGH_GATE) {
-        renderEnemyShadow(this->enemy.getEntityType(), this->enemy.getXPosDisplay(), this->enemy.getYPos());
-        renderEnemyStance(this->enemy.getEntityType(), this->enemy.getXPosDisplay(), this->enemy.getYPos(), STANCE_DEATH_6); 
+        renderEnemyShadow(this->enemy, this->enemy.getXPosDisplay(), this->enemy.getYPos());
+        renderEnemyStance(this->enemy, this->enemy.getXPosDisplay(), this->enemy.getYPos(), STANCE_DEATH_6); 
     }
+
+    renderPlayerStance(this->player.getXPosDisplay(), this->player.getYPos(), this->player.getStance());
 
     switch (this->gameStateDetails.arch) {
         
@@ -629,13 +628,13 @@ void Game::play_loop() {
             PD::drawBitmap(this->gameStateDetails.archXPos + 18, 12, Images::Arch_RH1);
             break;
 
-        case ARCH_LEFT_HAND_2:
-            PD::drawBitmap(this->gameStateDetails.archXPos + 1, 20, Images::Arch_RH2, NOROT, FLIPH);
-            break;
+        // case ARCH_LEFT_HAND_2:
+        //     PD::drawBitmap(this->gameStateDetails.archXPos + 1, 20, Images::Arch_RH2, NOROT, FLIPH);
+        //     break;
 
-        case ARCH_RIGHT_HAND_2:
-            PD::drawBitmap(this->gameStateDetails.archXPos + 11, 20, Images::Arch_RH2);
-            break;
+        // case ARCH_RIGHT_HAND_2:
+        //     PD::drawBitmap(this->gameStateDetails.archXPos + 11, 20, Images::Arch_RH2);
+        //     break;
 
         case ARCH_LEFT_HAND_3:
             PD::drawBitmap(this->gameStateDetails.archXPos - 6 + 9, 3, Images::Arch_RH3, NOROT, FLIPH);
@@ -645,9 +644,9 @@ void Game::play_loop() {
             PD::drawBitmap(this->gameStateDetails.archXPos + 13 + 9, 3, Images::Arch_RH3);
             break;
 
-        case ARCH_LEFT_HAND_4:
-            PD::drawBitmap(this->gameStateDetails.archXPos +40, 0, Images::Arch_RH4, NOROT, FLIPH);
-            break;
+        // case ARCH_LEFT_HAND_4:
+        //     PD::drawBitmap(this->gameStateDetails.archXPos +40, 0, Images::Arch_RH4, NOROT, FLIPH);
+        //     break;
 
         case ARCH_RIGHT_HAND_4:
             PD::drawBitmap(this->gameStateDetails.archXPos + 12, 4, Images::Arch_RH4);
@@ -714,60 +713,69 @@ void Game::play_loop() {
 
             }
 
-            if (this->enemy.isNormalEnemy()) {
+            switch (this->enemy.getEntityType()) {
 
-                this->enemy.setHealth(this->enemy.getHealth() - enemyHit < 10 ? 0 : this->enemy.getHealth() - enemyHit);
-                this->enemy.setRegain(0);
+                case EntityType::EnemyOne ... EntityType::Emperor:
 
-                if (this->enemy.isEmpty()) {
+                    this->enemy.setHealth(this->enemy.getHealth() - enemyHit < 10 ? 0 : this->enemy.getHealth() - enemyHit);
+                    this->enemy.setRegain(0);
 
-                    enemyImmediateAction = (random(0, this->enemy.getImmediateAction()) == 0);     // Should the enemy take an immediate action?
-                    enemyImmediateRetreat = (random(0, this->enemy.getRetreatAction()) == 0);    // Should the enemy retreat immediately?
+                    if (this->enemy.isEmpty()) {
 
-                }
+                        enemyImmediateAction = (random(0, this->enemy.getImmediateAction()) == 0);     // Should the enemy take an immediate action?
+                        enemyImmediateRetreat = (random(0, this->enemy.getRetreatAction()) == 0);    // Should the enemy retreat immediately?
 
-                if (this->enemy.getHealth() == 0) {
+                    }
 
-                   if (!this->player.contains(STANCE_VICTORY_1)) {
+                    if (this->enemy.getHealth() == 0) {
 
-                        this->player.clear();
+                        if (!this->player.contains(STANCE_VICTORY_1)) {
 
-                        this->player.push(STANCE_DEFAULT, STANCE_DEFAULT, STANCE_DEFAULT, false);
-                        this->player.push(STANCE_DEFAULT, STANCE_DEFAULT, STANCE_DEFAULT, false);
-                        this->player.push(STANCE_VICTORY_2, STANCE_VICTORY_1, STANCE_VICTORY_1, false);
-                        this->player.push(STANCE_VICTORY_1, STANCE_VICTORY_1, STANCE_VICTORY_2, false);
+                                this->player.clear();
 
-                        switch (this->player.getStance()) {
+                                this->player.push(STANCE_DEFAULT, STANCE_DEFAULT, STANCE_DEFAULT, false);
+                                this->player.push(STANCE_DEFAULT, STANCE_DEFAULT, STANCE_DEFAULT, false);
+                                this->player.push(STANCE_VICTORY_2, STANCE_VICTORY_1, STANCE_VICTORY_1, false);
+                                this->player.push(STANCE_VICTORY_1, STANCE_VICTORY_1, STANCE_VICTORY_2, false);
 
-                            case STANCE_KICK_HIGH_END:
-                            case STANCE_KICK_MED_END:
-                            case STANCE_KICK_LOW_END:
-                                this->player.push(STANCE_DEFAULT, STANCE_DEFAULT_LEAN_FORWARD, STANCE_KICK_READY, false);
-                                break;
+                                switch (this->player.getStance()) {
 
-                            case STANCE_PUNCH_HIGH_LH_END:
-                            case STANCE_PUNCH_HIGH_RH_END:
-                            case STANCE_PUNCH_MED_LH_END:
-                            case STANCE_PUNCH_MED_RH_END:
-                            case STANCE_PUNCH_LOW_LH_END:
-                            case STANCE_PUNCH_LOW_RH_END:
+                                    case STANCE_KICK_HIGH_END:
+                                    case STANCE_KICK_MED_END:
+                                    case STANCE_KICK_LOW_END:
+                                        this->player.push(STANCE_DEFAULT, STANCE_DEFAULT_LEAN_FORWARD, STANCE_KICK_READY, false);
+                                        break;
 
-                                this->player.push(STANCE_DEFAULT, STANCE_DEFAULT_LEAN_FORWARD, STANCE_PUNCH_READY, false);
-                                break;
+                                    case STANCE_PUNCH_HIGH_LH_END:
+                                    case STANCE_PUNCH_HIGH_RH_END:
+                                    case STANCE_PUNCH_MED_LH_END:
+                                    case STANCE_PUNCH_MED_RH_END:
+                                    case STANCE_PUNCH_LOW_LH_END:
+                                    case STANCE_PUNCH_LOW_RH_END:
+
+                                        this->player.push(STANCE_DEFAULT, STANCE_DEFAULT_LEAN_FORWARD, STANCE_PUNCH_READY, false);
+                                        break;
+
+                                }
+
 
                         }
 
+                        this->playTheme(SoundTheme::DefeatEnemy);
 
-                   }
+                    }
+                    
+                    break;
 
-                    this->playTheme(SoundTheme::DefeatEnemy);
 
-                }
+                case EntityType::Eagle:
 
-            }
-            else {
+                    this->enemy.setMode(EAGLE_MODE_FLY_AWAY);
+                    break;
 
-                this->enemy.setMode(EAGLE_MODE_FLY_AWAY);
+                case EntityType::Door:
+                    this->enemy.setHealth(0);
+                    break;
 
             }
 

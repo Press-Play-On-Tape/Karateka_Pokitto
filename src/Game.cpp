@@ -250,6 +250,21 @@ void Game::loop() {
             this->enemy.clear();
             this->player.setXPosOverall(-60);
             this->gameStateDetails.setCurrState(GAME_STATE_PLAY);
+
+            switch (this->enemy.getEntityType()) {
+
+                case EntityType::Door:
+                    this->enemy.reset(90);
+                    this->enemy.setHealth(1);
+                    this->enemy.setRegainLimit(1);
+                    this->enemy.setXPos(276);
+                    this->enemy.setXPosDelta(0);
+                    this->enemy.setYPos(20);
+                    this->enemy.setActivity(0);
+                    break;
+
+            }
+
             break;
         
         case GAME_STATE_FINAL_SCENE_INIT:
