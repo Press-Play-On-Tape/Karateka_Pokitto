@@ -23237,46 +23237,25 @@
 		"\\src\\images\\archway\\Arch_Door_03.h": {
 			"sdcard": false
 		},
-		"/src/sound/karate20 - BreakDoor.mp3": {
+		"\\music\\karate09.raw": {
 			"sdcard": false
 		},
-		"/src/sound/karate20.raw": {
+		"\\music\\karate11.raw": {
 			"sdcard": false
 		},
-		"/src/images/archway/Arch_Door_00.h": {
+		"\\music\\karate20.raw": {
 			"sdcard": false
 		},
-		"/src/images/archway/Arch_Door_00.png": {
+		"\\src\\sound\\karate20 - BreakDoor.mp3": {
 			"sdcard": false
 		},
-		"/src/images/archway/Arch_Door_01.h": {
+		"\\src\\sound\\karate20.raw": {
 			"sdcard": false
 		},
-		"/src/images/archway/Arch_Door_01.png": {
+		"\\Karateka_Pokitto.bin.5.gif": {
 			"sdcard": false
 		},
-		"/src/images/archway/Arch_Door_02.h": {
-			"sdcard": false
-		},
-		"/src/images/archway/Arch_Door_02.png": {
-			"sdcard": false
-		},
-		"/src/images/archway/Arch_Door_03.h": {
-			"sdcard": false
-		},
-		"/src/images/archway/Arch_Door_03.png": {
-			"sdcard": false
-		},
-		"/music/karate11 - Kiai.raw": {
-			"sdcard": false
-		},
-		"/music/karate11.raw": {
-			"sdcard": false
-		},
-		"/music/karate09 - EagleAttack.raw": {
-			"sdcard": false
-		},
-		"/music/karate09.raw": {
+		"\\Karateka_Pokitto.bin.7.png": {
 			"sdcard": false
 		}
 	},

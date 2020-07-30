@@ -223,19 +223,21 @@ void Game::renderEnemyStance(Entity &entity, int8_t x, int8_t y, uint8_t stance)
 
                 x = x + 4 + xEnemyOffset[stance];
                 y = y - 5 + yEnemyOffset[stance];
-
+                    
                 switch (stance) {
 
                     case STANCE_DEFAULT:
                         PD::drawBitmap(x, y - 40 + (this->enemy.getIdleFrame() != 0 ? 1 : 0), Images::EnemyOne[stance]);
                         y = y + xEnemyHeads[stance];
-                        PD::drawBitmap(x, y - 40, Images::EnemyCommon_Idle[this->enemy.getIdleFrame()]);
+                        this->colourEnemyImage(Images::EnemyCommon_Idle[this->enemy.getIdleFrame()], EntityType::EnemyOne);
+                        PD::drawBitmap(x, y - 40, this->imageToColour);
                         break;
-                        
+
                     case STANCE_STANDING_UPRIGHT_REV:
                         PD::drawBitmap(x, y - 40, Images::EnemyOne[STANCE_STANDING_UPRIGHT], NOROT, FLIPH);
                         y = y + xEnemyHeads[STANCE_STANDING_UPRIGHT];
-                        PD::drawBitmap(x, y - 40, Images::EnemyCommon[STANCE_STANDING_UPRIGHT], NOROT, FLIPH);
+                        this->colourEnemyImage(Images::EnemyCommon[STANCE_STANDING_UPRIGHT], EntityType::EnemyOne);
+                        PD::drawBitmap(x, y - 40, this->imageToColour, NOROT, FLIPH);
                         break;
 
                     case STANCE_BOW_1_REV ... STANCE_BOW_2_REV:
@@ -243,7 +245,8 @@ void Game::renderEnemyStance(Entity &entity, int8_t x, int8_t y, uint8_t stance)
                             uint8_t altStance = stance - (STANCE_BOW_1_REV - STANCE_BOW_1);
                             PD::drawBitmap(x, y - 40, Images::EnemyOne[altStance], NOROT, FLIPH);
                             y = y + xEnemyHeads[altStance];
-                            PD::drawBitmap(x, y - 40, Images::EnemyCommon[altStance], NOROT, FLIPH);
+                            this->colourEnemyImage(Images::EnemyCommon[altStance], EntityType::EnemyOne);
+                            PD::drawBitmap(x, y - 40, this->imageToColour, NOROT, FLIPH);
                         }
                         break;
 
@@ -252,26 +255,28 @@ void Game::renderEnemyStance(Entity &entity, int8_t x, int8_t y, uint8_t stance)
                             uint8_t altStance = stance - (STANCE_RUNNING_1_REV - STANCE_RUNNING_1);
                             PD::drawBitmap(x, y - 40, Images::EnemyOne[altStance], NOROT, FLIPH);
                             y = y + xEnemyHeads[altStance];
-                            PD::drawBitmap(x, y - 40, Images::EnemyCommon[altStance], NOROT, FLIPH);
+                            this->colourEnemyImage(Images::EnemyCommon[altStance], EntityType::EnemyOne);
+                            PD::drawBitmap(x, y - 40, this->imageToColour, NOROT, FLIPH);
                         }
                         break;
 
                     case STANCE_DEATH_5 ... STANCE_DEATH_6:
-                        PD::drawBitmap(x, y - 40, Images::EnemyOne[stance]);
+                        this->colourEnemyImage(Images::EnemyOne[stance], EntityType::EnemyOne);
+                        PD::drawBitmap(x, y - 40, this->imageToColour);
                         break;
 
                     default:
                         PD::drawBitmap(x, y - 40, Images::EnemyOne[stance]);
                         y = y + xEnemyHeads[stance];
-                        PD::drawBitmap(x, y - 40, Images::EnemyCommon[stance]);
+                        this->colourEnemyImage(Images::EnemyCommon[stance], EntityType::EnemyOne);
+                        PD::drawBitmap(x, y - 40, this->imageToColour);
                         break;
 
                 }
 
             }
-
             break;
-
+            
         case EntityType::EnemyTwo:
             {
 
@@ -283,13 +288,15 @@ void Game::renderEnemyStance(Entity &entity, int8_t x, int8_t y, uint8_t stance)
                     case STANCE_DEFAULT:
                         PD::drawBitmap(x, y - 40 + (this->enemy.getIdleFrame() != 0 ? 1 : 0), Images::EnemyTwo[stance]);
                         y = y + xEnemyHeads[stance];
-                        PD::drawBitmap(x, y - 40, Images::EnemyCommon_Idle[this->enemy.getIdleFrame()]);
+                        this->colourEnemyImage(Images::EnemyCommon_Idle[this->enemy.getIdleFrame()], EntityType::EnemyTwo);
+                        PD::drawBitmap(x, y - 40, this->imageToColour);
                         break;
 
                     case STANCE_STANDING_UPRIGHT_REV:
                         PD::drawBitmap(x, y - 40, Images::EnemyTwo[STANCE_STANDING_UPRIGHT], NOROT, FLIPH);
                         y = y + xEnemyHeads[STANCE_STANDING_UPRIGHT];
-                        PD::drawBitmap(x, y - 40, Images::EnemyCommon[STANCE_STANDING_UPRIGHT], NOROT, FLIPH);
+                        this->colourEnemyImage(Images::EnemyCommon[STANCE_STANDING_UPRIGHT], EntityType::EnemyTwo);
+                        PD::drawBitmap(x, y - 40, this->imageToColour, NOROT, FLIPH);
                         break;
 
                     case STANCE_BOW_1_REV ... STANCE_BOW_2_REV:
@@ -297,7 +304,8 @@ void Game::renderEnemyStance(Entity &entity, int8_t x, int8_t y, uint8_t stance)
                             uint8_t altStance = stance - (STANCE_BOW_1_REV - STANCE_BOW_1);
                             PD::drawBitmap(x, y - 40, Images::EnemyTwo[altStance], NOROT, FLIPH);
                             y = y + xEnemyHeads[altStance];
-                            PD::drawBitmap(x, y - 40, Images::EnemyCommon[altStance], NOROT, FLIPH);
+                            this->colourEnemyImage(Images::EnemyCommon[altStance], EntityType::EnemyTwo);
+                            PD::drawBitmap(x, y - 40, this->imageToColour, NOROT, FLIPH);
                         }
                         break;
 
@@ -306,18 +314,21 @@ void Game::renderEnemyStance(Entity &entity, int8_t x, int8_t y, uint8_t stance)
                             uint8_t altStance = stance - (STANCE_RUNNING_1_REV - STANCE_RUNNING_1);
                             PD::drawBitmap(x, y - 40, Images::EnemyTwo[altStance], NOROT, FLIPH);
                             y = y + xEnemyHeads[altStance];
-                            PD::drawBitmap(x, y - 40, Images::EnemyCommon[altStance], NOROT, FLIPH);
+                            this->colourEnemyImage(Images::EnemyCommon[altStance], EntityType::EnemyTwo);
+                            PD::drawBitmap(x, y - 40, this->imageToColour, NOROT, FLIPH);
                         }
                         break;
 
                     case STANCE_DEATH_5 ... STANCE_DEATH_6:
-                        PD::drawBitmap(x, y - 40, Images::EnemyTwo[stance]);
+                        this->colourEnemyImage(Images::EnemyTwo[stance], EntityType::EnemyTwo);
+                        PD::drawBitmap(x, y - 40, this->imageToColour);
                         break;
 
                     default:
                         PD::drawBitmap(x, y - 40, Images::EnemyTwo[stance]);
                         y = y + xEnemyHeads[stance];
-                        PD::drawBitmap(x, y - 40, Images::EnemyCommon[stance]);
+                        this->colourEnemyImage(Images::EnemyCommon[stance], EntityType::EnemyTwo);
+                        PD::drawBitmap(x, y - 40, this->imageToColour);
                         break;
 
                 }
@@ -686,6 +697,7 @@ void Game::colourEnemyImage(const uint8_t * image, EntityType entityType) {
 
                     if (lowByte == 0x07)        imageToColour[i] = (imageToColour[i] & 0xF0) | 0x09;            
                     else if (lowByte == 0x0C)   imageToColour[i] = (imageToColour[i] & 0xF0) | 0x0F;            
+                    else if (lowByte == 0x01)   imageToColour[i] = (imageToColour[i] & 0xF0);            
 
                 }
 
@@ -694,12 +706,55 @@ void Game::colourEnemyImage(const uint8_t * image, EntityType entityType) {
 
                     if (highByte == 0x70)       imageToColour[i] = (imageToColour[i] & 0x0F) | 0x90;
                     else if (highByte == 0xC0)  imageToColour[i] = (imageToColour[i] & 0x0F) | 0xF0;
+                    else if (highByte == 0x10)  imageToColour[i] = (imageToColour[i] & 0x0F);
 
                 }
 
             }            
 
             break;
+
+        case EntityType::EnemyOne:
+
+            for (uint16_t i = 2; i < imageSize; i++) {
+
+                {
+                    uint8_t lowByte = (imageToColour[i] & 0x0F);
+
+                    if (lowByte == 0x01)        imageToColour[i] = (imageToColour[i] & 0xF0) | 0x09;            
+                }
+                
+                {
+                    uint8_t highByte = (imageToColour[i] & 0xF0);
+
+                    if (highByte == 0x10)       imageToColour[i] = (imageToColour[i] & 0x0F) | 0x90;
+                }
+
+            }            
+
+            break;
+
+
+        case EntityType::EnemyTwo:
+
+            for (uint16_t i = 2; i < imageSize; i++) {
+
+                {
+                    uint8_t lowByte = (imageToColour[i] & 0x0F);
+
+                    if (lowByte == 0x01)        imageToColour[i] = (imageToColour[i] & 0xF0) | 0x03;            
+                }
+                
+                {
+                    uint8_t highByte = (imageToColour[i] & 0xF0);
+
+                    if (highByte == 0x10)       imageToColour[i] = (imageToColour[i] & 0x0F) | 0x30;
+                }
+
+            }            
+
+            break;
+
 
         case EntityType::EnemyThree:
 
@@ -710,7 +765,7 @@ void Game::colourEnemyImage(const uint8_t * image, EntityType entityType) {
 
                     if (lowByte == 0x09)        imageToColour[i] = (imageToColour[i] & 0xF0) | 0x0D;            
                     else if (lowByte == 0x07)   imageToColour[i] = (imageToColour[i] & 0xF0) | 0x0D;            
-                    else if (lowByte == 0x0C)   imageToColour[i] = (imageToColour[i] & 0xF0) | 0x0F;     
+                    else if (lowByte == 0x01)   imageToColour[i] = (imageToColour[i] & 0xF0) | 0x04;     
                 }
                 
                 {
@@ -718,7 +773,7 @@ void Game::colourEnemyImage(const uint8_t * image, EntityType entityType) {
 
                     if (highByte == 0x90)       imageToColour[i] = (imageToColour[i] & 0x0F) | 0xD0;
                     else if (highByte == 0x70)  imageToColour[i] = (imageToColour[i] & 0x0F) | 0xD0;
-                    else if (highByte == 0xC0)  imageToColour[i] = (imageToColour[i] & 0x0F) | 0xF0;
+                    else if (highByte == 0x10)  imageToColour[i] = (imageToColour[i] & 0x0F) | 0x40;
                 }
 
             }            
