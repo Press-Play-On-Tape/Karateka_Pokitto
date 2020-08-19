@@ -10,6 +10,7 @@
 #include "title/Titles.h"
 #include "ppot/PPOT.h"
 #include "font/Chars.h"
+#include "instructions/Instructions.h"
 
 namespace Images {
 

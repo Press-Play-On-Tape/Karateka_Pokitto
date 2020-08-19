@@ -166,7 +166,19 @@ void Game::loop() {
             titlePlayerY = 90;
             titlePlayerFrame = 0;
             break;
-            
+
+        case GAME_STATE_INSTRUCTIONS_INIT:
+            instructions_Init();
+            this->gameStateDetails.setCurrState(GAME_STATE_INSTRUCTIONS);
+            [[fallthrough]]
+
+        case GAME_STATE_INSTRUCTIONS:
+            instructions();
+            // if (PC::buttons.pressed(BTN_A)) {
+            //     this->gameStateDetails.setCurrState(GAME_STATE_TITLE_SCENE);
+            // }
+            break;      
+
         case GAME_STATE_CASTLE_SCENE_INIT:
             
             this->readImage(this->imgBuffer, ImageName::Castle);

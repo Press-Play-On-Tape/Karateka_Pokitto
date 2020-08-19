@@ -43,6 +43,8 @@
 #define GAME_STATE_CASTLE_SCENE_INIT              252
 #define GAME_STATE_EXTRO_TEXT                     250
 #define GAME_STATE_EXTRO_TEXT_INIT                249
+#define GAME_STATE_INSTRUCTIONS_INIT              247
+#define GAME_STATE_INSTRUCTIONS                   246
 
 #define COOKIE_INITIALISED                        37
 #define XPOSOVERALL_NO_CHANGE                     127
@@ -123,7 +125,8 @@ enum class Direction : uint8_t {
 enum class Background : uint8_t {
     Inside,
     Outside,
-    Dungeon
+    Dungeon,
+    Instructions
 };
 
 #define ANIMATION_NUMBER_OF_FRAMES                5

@@ -62,6 +62,8 @@ class Game {
         void colourEnemyImage(const uint8_t * image, EntityType entityType);
         void introText();
         void extroText();
+        void instructions_Init();
+        void instructions();
 
         bool canMoveCloser(Movement moverMovement, Entity other, uint16_t distBetween);
         Movement getLargestMove(Entity other, uint16_t distBetween);
@@ -72,6 +74,7 @@ class Game {
         SplashScreenVariables splashScreenVariables;
         TitleScreenVars titleScreenVars;
         IntroTextVariables introTextVariables;
+        InstructionVariables instructionVariables;
         
         Stack <uint8_t, 30> playerStack;
         Stack <uint8_t, 30> enemyStack;
@@ -106,7 +109,6 @@ class Game {
 
         uint8_t imageToColour[2000];
         uint8_t imgBuffer[2 + ((110 * 88) / 2)];
-
 
 };
 

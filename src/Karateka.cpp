@@ -32,6 +32,7 @@ void Game::draw_background() {
 
     const uint8_t *backdrop_img = nullptr;
     uint8_t yOffset = 0;
+    uint8_t yGroundOffset = 0;
     uint8_t backgroundOffset = 0;
 
     switch (this->gameStateDetails.background) {
@@ -52,6 +53,12 @@ void Game::draw_background() {
             backgroundOffset = 16;
             yOffset = 0;
             break;
+    
+        case Background::Instructions:
+            backdrop_img = Images::Backdrop_00;
+            yOffset = 6;
+            yGroundOffset = 9;
+            break; 
 
     }
 
@@ -60,7 +67,8 @@ void Game::draw_background() {
         switch (this->gameStateDetails.background) { 
     
             case Background::Outside:
-                PD::drawBitmap(i, 68, Images::Floor_Brown);
+            case Background::Instructions:
+                PD::drawBitmap(i, 68 + yGroundOffset, Images::Floor_Brown);
                 break; 
                 
             case Background::Inside:
@@ -94,25 +102,29 @@ void Game::draw_background() {
 
     // Draw player triangles ..
 
-    if (PC::frameCount % ANIMATION_FLASHING_TRIANGLES == 0) displayHealth = !displayHealth;
+    if (this->gameStateDetails.background != Background::Instructions) {
+            
+        if (PC::frameCount % ANIMATION_FLASHING_TRIANGLES == 0) displayHealth = !displayHealth;
 
-    if (this->player.getHealth() > 27 || displayHealth) {
+        if (this->player.getHealth() > 27 || displayHealth) {
 
-        for (uint8_t i = 0; i < (this->player.getHealth() / 10); i++) {
-            PD::drawBitmap((i * 4), 82, Images::ArrowLeft);
+            for (uint8_t i = 0; i < (this->player.getHealth() / 10); i++) {
+                PD::drawBitmap((i * 4), 82, Images::ArrowLeft);
+            }
+
         }
 
-    }
 
+        // Draw enemy triangles ..
 
-    // Draw enemy triangles ..
+        if (this->enemy.isNormalEnemy()) {
 
-    if (this->enemy.isNormalEnemy()) {
+            if (this->enemy.getHealth() > 27 || displayHealth) {
 
-        if (this->enemy.getHealth() > 27 || displayHealth) {
+                for (uint8_t i = (this->enemy.getHealth() / 10); i > 0; i--) {
+                    PD::drawBitmap(111 - (i * 4), 82, Images::ArrowRight);
+                }
 
-            for (uint8_t i = (this->enemy.getHealth() / 10); i > 0; i--) {
-                PD::drawBitmap(111 - (i * 4), 82, Images::ArrowRight);
             }
 
         }
@@ -233,7 +245,7 @@ void Game::play_loop() {
 
     // Skip to next scene ..
 
-    if (PC::buttons.pressed(BTN_C)) {
+    if (PC::buttons.pressed(BTN_C) && this->gameStateDetails.getCurrState() != GAME_STATE_TITLE_SCENE) {
 
         this->gameStateDetails.setCurrState(GAME_STATE_FOLLOW_SEQUENCE);
         this->player.setStance(STANCE_DEFAULT);

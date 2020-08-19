@@ -23278,6 +23278,105 @@
 		},
 		"/music/karate09.raw": {
 			"sdcard": false
+		},
+		"\\music\\karate09.raw": {
+			"sdcard": false
+		},
+		"\\music\\karate11.raw": {
+			"sdcard": false
+		},
+		"\\music\\karate20.raw": {
+			"sdcard": false
+		},
+		"\\src\\sound\\karate20 - BreakDoor.mp3": {
+			"sdcard": false
+		},
+		"\\src\\sound\\karate20.raw": {
+			"sdcard": false
+		},
+		"\\src\\Karateka copy.cpp": {
+			"sdcard": false
+		},
+		"\\src\\Karateka_Instructions.cpp": {
+			"sdcard": false
+		},
+		"\\aaa.png": {
+			"sdcard": false
+		},
+		"\\aaa.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\New folder": {
+			"sdcard": false
+		},
+		"\\src\\images\\instrructions": {
+			"sdcard": false
+		},
+		"\\src\\images\\instrructions\\ButtonA.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\instrructions\\ButtonUp.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\instrructions\\ButtonDown.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\instrructions\\ButtonRight.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\instrructions\\ButtonB.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\instrructions\\Instructions.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\instructions": {
+			"sdcard": false
+		},
+		"\\src\\images\\instructions\\ButtonA.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\instructions\\ButtonB.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\instructions\\ButtonRight.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\instructions\\ButtonDown.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\instructions\\ButtonUp.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\instructions\\Instructions.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\instructions\\ButtonA.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\instructions\\ButtonB.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\instructions\\ButtonRight.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\instructions\\ButtonDown.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\instructions\\ButtonUp.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\instructions\\ButtonB - Copy.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\instructions\\ButtonC.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\instructions\\ButtonC.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\scenery\\ConvertImg.js": {
+			"sdcard": false
 		}
 	},
 	"BUILDFlags": {

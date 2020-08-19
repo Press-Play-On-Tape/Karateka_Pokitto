@@ -12,6 +12,34 @@ struct IntroTextVariables {
 
 };
 
+struct InstructionVariables {
+
+    uint8_t instruction;
+    bool performedFightReady;
+    bool performedUpright;
+    bool kickHigh;
+    bool kickMed;
+    bool kickLow;
+    bool punchHigh;
+    bool punchMed;
+    bool punchLow;
+    
+    void reset() {
+
+        this->instruction = 0;
+        this->performedFightReady = false;
+        this->performedUpright = false;
+        this->kickHigh = false;
+        this->kickMed = false;
+        this->kickLow = false;
+        this->punchHigh = false;
+        this->punchMed = false;
+        this->punchLow = false;
+        
+    }
+
+};
+
 struct SplashScreenVariables {
 
     uint8_t counter = 0;

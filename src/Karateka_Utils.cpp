@@ -810,6 +810,12 @@ void Game::readImage(uint8_t *buffer, ImageName imageName) {
             }
             break;
 
+        case ImageName::Mountain:
+            if (file.openRO("music/karate03.img")) {
+                file.read(buffer, 2 + ((110 * 88) / 2));
+            }
+            break;
+
     }
 
 }

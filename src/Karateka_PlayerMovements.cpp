@@ -51,7 +51,7 @@ void Game::playerMovements() {
 
                     // Move to the Kick Ready position ..
 
-                    if (!PC::buttons.pressed(BTN_UP) && !PC::buttons.pressed(BTN_RIGHT) && !PC::buttons.pressed(BTN_RIGHT) && !PC::buttons.pressed(BTN_DOWN)) {
+                    if (!PC::buttons.pressed(BTN_UP) && !PC::buttons.pressed(BTN_RIGHT) && !PC::buttons.pressed(BTN_DOWN)) {
 
                         this->player.push(STANCE_KICK_READY, STANCE_DEFAULT_LEAN_BACK, true);
                         this->player.setActionsBeforeReturn(random(PLAYER_KICK_ACTIONS_MIN, PLAYER_KICK_ACTIONS_MAX));
@@ -485,16 +485,19 @@ void Game::playerMovements_Punch() {
     if (PC::buttons.pressed(BTN_RIGHT))  {             // Medium punch ..
         this->player.push(STANCE_PUNCH_READY, (this->player.getRightPunch() ? STANCE_PUNCH_MED_RH_END : STANCE_PUNCH_MED_LH_END), true);
         this->player.setRightPunch(!this->player.getRightPunch());
+        if (this->instructionVariables.instruction == 2) this->instructionVariables.punchMed = true;
     }
 
     else if (PC::buttons.pressed(BTN_UP))  {           // High punch ..
         this->player.push(STANCE_PUNCH_READY, (this->player.getRightPunch() ? STANCE_PUNCH_HIGH_RH_END : STANCE_PUNCH_HIGH_LH_END), true);
         this->player.setRightPunch(!this->player.getRightPunch());
+        if (this->instructionVariables.instruction == 2) this->instructionVariables.punchHigh = true;
     }
 
     else if (PC::buttons.pressed(BTN_DOWN))  {         // Low punch ..
         this->player.push(STANCE_PUNCH_READY, (this->player.getRightPunch() ? STANCE_PUNCH_LOW_RH_END : STANCE_PUNCH_LOW_LH_END), true);
         this->player.setRightPunch(!this->player.getRightPunch());
+        if (this->instructionVariables.instruction == 2) this->instructionVariables.punchLow = true;
     }
 
     else if (PC::buttons.pressed(BTN_LEFT) && this->player.getXPosOverall() > 16) {

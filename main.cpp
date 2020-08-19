@@ -18,7 +18,7 @@ int main(){
     PD::setColor(5);
     PD::setInvisibleColor(14);
     PC::setFrameRate(40);
-    PD::setFont(fontKoubit);
+    PD::setFont(fontTight);
 
     game.setup();
     

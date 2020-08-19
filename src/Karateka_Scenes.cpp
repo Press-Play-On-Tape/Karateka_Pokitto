@@ -48,7 +48,7 @@ void Game::showScene() {
     this->player.update();
     this->enemy.update();
 
-    if (PC::buttons.pressed(BTN_A) || PC::buttons.pressed(BTN_C)) {
+    if (PC::buttons.pressed(BTN_A) /* || PC::buttons.pressed(BTN_C)*/) {
         
         if (this->gameStateDetails.getCurrState() == GAME_STATE_THE_END) {
             this->gameStateDetails.sequence = 0;
@@ -63,7 +63,11 @@ void Game::showScene() {
         switch (this->gameStateDetails.getCurrState()) {
 
             case GAME_STATE_TITLE_SCENE:
+
                 PD::drawBitmap(0, 0, this->imgBuffer);
+                if (PC::buttons.pressed(BTN_C)) {
+                    this->gameStateDetails.setCurrState(GAME_STATE_INSTRUCTIONS_INIT);
+                }
                 break;
 
             case GAME_STATE_CASTLE_SCENE:
