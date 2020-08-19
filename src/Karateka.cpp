@@ -55,19 +55,20 @@ void Game::draw_background() {
             break;
     
         case Background::Instructions:
-            backdrop_img = Images::Backdrop_00;
             yOffset = 6;
             yGroundOffset = 9;
             break; 
 
     }
 
+//        PD::drawBitmap(0, 0, Images::Mountain);
+        PD::drawBitmap(0, 0, this->imgBuffer);
+
     for (int i = 0; i < 110; i = i + 24) {
 
         switch (this->gameStateDetails.background) { 
     
             case Background::Outside:
-            case Background::Instructions:
                 PD::drawBitmap(i, 68 + yGroundOffset, Images::Floor_Brown);
                 break; 
                 
@@ -79,6 +80,10 @@ void Game::draw_background() {
                 PD::drawBitmap(i, 68, Images::Floor_Blue);
                 break;
 
+            case Background::Instructions:
+                PD::drawBitmap(i, 73 + yGroundOffset, Images::Floor_Brown);
+                break; 
+
         }
 
     }
@@ -88,10 +93,9 @@ void Game::draw_background() {
         PD::drawBitmap(-this->player.getXPosOverall() / 2, 21, Images::Crevice);
     }
 
+
     if (backdrop_img != nullptr) {
 
-//        PD::drawBitmap(0, 0, Images::Mountain);
-        PD::drawBitmap(0, 0, this->imgBuffer);
         PD::drawBitmap(mainSceneX - backgroundOffset - MAIN_SCENE_IMG_WIDTH, yOffset, backdrop_img);
         PD::drawBitmap(mainSceneX - backgroundOffset, yOffset, backdrop_img);
         PD::drawBitmap(mainSceneX - backgroundOffset + MAIN_SCENE_IMG_WIDTH, yOffset, backdrop_img);

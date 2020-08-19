@@ -25,7 +25,7 @@ void Game::instructions_Init() {
     this->player.setStance(STANCE_STANDING_UPRIGHT);
     this->gameStateDetails.background = Background::Instructions;
     this->instructionVariables.reset();
-    this->readImage(this->imgBuffer, ImageName::Mountain);
+    this->readImage(this->imgBuffer, ImageName::Dojo);
     this->gameStateDetails.setCurrState(GAME_STATE_INSTRUCTIONS);
 
 }
@@ -35,7 +35,7 @@ void Game::instructions() {
     // Kick
 
     draw_background();
-    renderPlayerStance(4, 80, this->player.getStance());
+    renderPlayerStance(4, 85, this->player.getStance());
 
 
     uint16_t cx = 0;
@@ -44,65 +44,66 @@ void Game::instructions() {
     int16_t y = 6;
 
     //if (PC::buttons.pressed(BTN_A)) this->gameStateDetails.setCurrState(GAME_STATE_FOLLOW_SEQUENCE);
+    PD::setColor(6, 1);
 
     switch (this->instructionVariables.instruction) {
 
         case 0:
-            PD::setCursor(44, 25);
+            PD::setCursor(45, 8);
             PD::print("Movements:");
-            PD::drawBitmap(44, 34, Images::ButtonDown);
-            PD::setCursor(56, 36);
+            PD::drawBitmap(45, 15, Images::ButtonDown);
+            PD::setCursor(57, 17);
             PD::print("Fight ready");
-            PD::drawBitmap(44, 45, Images::ButtonUp);
-            PD::setCursor(56, 47);
+            PD::drawBitmap(45, 25, Images::ButtonUp);
+            PD::setCursor(57, 27);
             PD::print("Upright");
             break;
 
         case 1:
-            PD::setCursor(44, 25);
+            PD::setCursor(45, 8);
             PD::print("Kicking:");
-            PD::drawBitmap(44, 34, Images::ButtonA);
-            PD::setCursor(56, 36);
+            PD::drawBitmap(45, 15, Images::ButtonA);
+            PD::setCursor(57, 17);
             PD::print("Kick ready");
-            PD::drawBitmap(44, 45, Images::ButtonUp);
-            PD::setCursor(56, 47);
+            PD::drawBitmap(45, 25, Images::ButtonUp);
+            PD::setCursor(57, 27);
             PD::print("High kick");
-            PD::drawBitmap(44, 56, Images::ButtonRight);
-            PD::setCursor(56, 58);
+            PD::drawBitmap(45, 35, Images::ButtonRight);
+            PD::setCursor(57, 37);
             PD::print("Medium kick");
-            PD::drawBitmap(44, 67, Images::ButtonDown);
-            PD::setCursor(56, 69);
+            PD::drawBitmap(45, 45, Images::ButtonDown);
+            PD::setCursor(57, 47);
             PD::print("Low kick");
             break;
 
         case 2:
-            PD::setCursor(44, 25);
+            PD::setCursor(45, 8);
             PD::print("Punching:");
-            PD::drawBitmap(44, 34, Images::ButtonB);
-            PD::setCursor(56, 36);
+            PD::drawBitmap(45, 15, Images::ButtonB);
+            PD::setCursor(57, 17);
             PD::print("Punch ready");
-            PD::drawBitmap(44, 45, Images::ButtonUp);
-            PD::setCursor(56, 47);
+            PD::drawBitmap(45, 25, Images::ButtonUp);
+            PD::setCursor(57, 27);
             PD::print("High punch");
-            PD::drawBitmap(44, 56, Images::ButtonRight);
-            PD::setCursor(56, 58);
+            PD::drawBitmap(45, 35, Images::ButtonRight);
+            PD::setCursor(57, 37);
             PD::print("Medium punch");
-            PD::drawBitmap(44, 67, Images::ButtonDown);
-            PD::setCursor(56, 69);
+            PD::drawBitmap(45, 45, Images::ButtonDown);
+            PD::setCursor(57, 47);
             PD::print("Low punch");
             break;
 
         case 3:
-            PD::setCursor(44, 25);
+            PD::setCursor(45, 8);
             PD::print("Practice:");
-            PD::setCursor(44, 36);
+            PD::setCursor(45, 17);
             PD::print("Try out the kicks");
-            PD::setCursor(44, 45);
+            PD::setCursor(45, 26);
             PD::print("and punches you");
-            PD::setCursor(44, 54);
+            PD::setCursor(45, 35);
             PD::print("have learnt.");
-            PD::drawBitmap(44, 64, Images::ButtonC);
-            PD::setCursor(56, 66);
+            PD::drawBitmap(45, 44, Images::ButtonC);
+            PD::setCursor(57, 46);
             PD::print("Finished");
             break;
 
