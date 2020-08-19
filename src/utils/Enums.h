@@ -55,7 +55,8 @@
 enum class ImageName : uint8_t {
     Title,
     Castle,
-    PPOT
+    PPOT,
+    Mountain
 };
 
 enum class EntityType : uint8_t {

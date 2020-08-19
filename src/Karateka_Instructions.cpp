@@ -25,6 +25,8 @@ void Game::instructions_Init() {
     this->player.setStance(STANCE_STANDING_UPRIGHT);
     this->gameStateDetails.background = Background::Instructions;
     this->instructionVariables.reset();
+    this->readImage(this->imgBuffer, ImageName::Mountain);
+    this->gameStateDetails.setCurrState(GAME_STATE_INSTRUCTIONS);
 
 }
 

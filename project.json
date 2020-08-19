@@ -23377,6 +23377,582 @@
 		},
 		"\\src\\images\\scenery\\ConvertImg.js": {
 			"sdcard": false
+		},
+		"/aaa.h": {
+			"sdcard": false
+		},
+		"/aaa.png": {
+			"sdcard": false
+		},
+		"/src/Karateka_Instructions.cpp": {
+			"sdcard": false
+		},
+		"/src/images/instructions": {
+			"sdcard": false
+		},
+		"/src/images/instructions/ButtonA.h": {
+			"sdcard": false
+		},
+		"/src/images/instructions/ButtonA.png": {
+			"sdcard": false
+		},
+		"/src/images/instructions/ButtonB.h": {
+			"sdcard": false
+		},
+		"/src/images/instructions/ButtonB.png": {
+			"sdcard": false
+		},
+		"/src/images/instructions/ButtonC.h": {
+			"sdcard": false
+		},
+		"/src/images/instructions/ButtonC.png": {
+			"sdcard": false
+		},
+		"/src/images/instructions/ButtonDown.h": {
+			"sdcard": false
+		},
+		"/src/images/instructions/ButtonDown.png": {
+			"sdcard": false
+		},
+		"/src/images/instructions/ButtonRight.h": {
+			"sdcard": false
+		},
+		"/src/images/instructions/ButtonRight.png": {
+			"sdcard": false
+		},
+		"/src/images/instructions/ButtonUp.h": {
+			"sdcard": false
+		},
+		"/src/images/instructions/Instructions.h": {
+			"sdcard": false
+		},
+		"/src/images/instructions/ButtonUp.png": {
+			"sdcard": false
+		},
+		"/src/images/scenery/ConvertImg.js": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/abbrev": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/ansi-regex": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/aproba": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/balanced-match": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/chownr": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/code-point-at": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/concat-map": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/brace-expansion": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/console-control-strings": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/core-util-is": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/deep-extend": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/detect-libc": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/fs.realpath": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/inherits": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/has-unicode": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/delegates": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/ini": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/isarray": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/decompress-response": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/mimic-response": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/minimatch": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/minimist": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/ignore-walk": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/mkdirp": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/abbrev/LICENSE": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/abbrev/README.md": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/abbrev/abbrev.js": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/abbrev/package.json": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/ansi-regex/package.json": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/ansi-regex/license": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/ansi-regex/index.js": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/ansi-regex/readme.md": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/aproba/index.js": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/aproba/LICENSE": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/aproba/README.md": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/aproba/package.json": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/balanced-match/LICENSE.md": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/balanced-match/index.js": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/balanced-match/README.md": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/chownr/LICENSE": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/balanced-match/package.json": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/chownr/README.md": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/chownr/chownr.js": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/code-point-at/license": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/chownr/package.json": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/code-point-at/index.js": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/code-point-at/package.json": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/code-point-at/readme.md": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/concat-map/LICENSE": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/concat-map/example": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/concat-map/index.js": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/concat-map/README.markdown": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/concat-map/package.json": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/concat-map/test": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/brace-expansion/README.md": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/brace-expansion/package.json": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/brace-expansion/LICENSE": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/brace-expansion/index.js": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/console-control-strings/README.md": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/console-control-strings/LICENSE": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/console-control-strings/package.json": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/console-control-strings/index.js": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/core-util-is/LICENSE": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/core-util-is/README.md": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/core-util-is/lib": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/core-util-is/float.patch": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/core-util-is/package.json": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/core-util-is/test.js": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/deep-extend/README.md": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/deep-extend/CHANGELOG.md": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/deep-extend/LICENSE": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/deep-extend/package.json": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/deep-extend/index.js": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/detect-libc/README.md": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/detect-libc/bin": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/detect-libc/LICENSE": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/detect-libc/lib": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/detect-libc/package.json": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/deep-extend/lib": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/fs.realpath/README.md": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/fs.realpath/LICENSE": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/fs.realpath/package.json": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/fs.realpath/old.js": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/fs.realpath/index.js": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/inherits/README.md": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/inherits/LICENSE": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/inherits/package.json": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/inherits/inherits_browser.js": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/inherits/inherits.js": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/has-unicode/README.md": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/has-unicode/LICENSE": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/has-unicode/package.json": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/has-unicode/index.js": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/delegates/History.md": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/delegates/Readme.md": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/delegates/License": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/delegates/Makefile": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/delegates/package.json": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/delegates/test": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/delegates/index.js": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/ini/README.md": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/ini/LICENSE": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/ini/ini.js": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/ini/package.json": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/isarray/README.md": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/isarray/Makefile": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/isarray/component.json": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/isarray/index.js": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/isarray/package.json": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/isarray/test.js": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/decompress-response/index.d.ts": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/decompress-response/package.json": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/decompress-response/readme.md": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/decompress-response/license": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/mimic-response/index.d.ts": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/mimic-response/index.js": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/mimic-response/package.json": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/decompress-response/index.js": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/mimic-response/license": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/mimic-response/readme.md": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/minimatch/README.md": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/minimatch/package.json": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/minimatch/LICENSE": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/minimatch/minimatch.js": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/minimist/LICENSE": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/minimist/example": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/minimist/index.js": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/minimist/package.json": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/minimist/readme.markdown": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/minimist/test": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/ignore-walk/README.md": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/ignore-walk/LICENSE": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/ignore-walk/index.js": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/ignore-walk/package.json": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/mkdirp/bin": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/mkdirp/LICENSE": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/mkdirp/package.json": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/mkdirp/index.js": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/mkdirp/readme.markdown": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/concat-map/example/map.js": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/concat-map/test/map.js": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/core-util-is/lib/util.js": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/detect-libc/bin/detect-libc.js": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/detect-libc/lib/detect-libc.js": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/deep-extend/lib/deep-extend.js": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/delegates/test/index.js": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/minimist/example/parse.js": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/minimist/test/all_bool.js": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/minimist/test/dash.js": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/minimist/test/bool.js": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/minimist/test/default_bool.js": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/minimist/test/dotted.js": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/minimist/test/kv_short.js": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/minimist/test/long.js": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/minimist/test/parse.js": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/minimist/test/num.js": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/minimist/test/parse_modified.js": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/minimist/test/proto.js": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/minimist/test/short.js": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/minimist/test/stop_early.js": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/minimist/test/whitespace.js": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/minimist/test/unknown.js": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/mkdirp/bin/cmd.js": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/mkdirp/bin/usage.txt": {
+			"sdcard": false
+		},
+		"/src/images/scenery/package-lock.json": {
+			"sdcard": false
+		},
+		"/src/images/scenery/Mountain.gfx": {
+			"sdcard": false
+		},
+		"/music/Mountain.gfx": {
+			"sdcard": false
+		},
+		"/music/karate04.ing": {
+			"sdcard": false
+		},
+		"/music/karate04.img": {
+			"sdcard": false
+		},
+		"/src/images/scenery/ConvertImg2.js": {
+			"sdcard": false
+		},
+		"/Archive 2.zip": {
+			"sdcard": false
+		},
+		"/Karateka.zip": {
+			"sdcard": false
+		},
+		"/imageonline-gifspeed-5095470.gif": {
+			"sdcard": false
 		}
 	},
 	"BUILDFlags": {

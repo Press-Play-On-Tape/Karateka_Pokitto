@@ -90,7 +90,8 @@ void Game::draw_background() {
 
     if (backdrop_img != nullptr) {
 
-        PD::drawBitmap(0, 0, Images::Mountain);
+//        PD::drawBitmap(0, 0, Images::Mountain);
+        PD::drawBitmap(0, 0, this->imgBuffer);
         PD::drawBitmap(mainSceneX - backgroundOffset - MAIN_SCENE_IMG_WIDTH, yOffset, backdrop_img);
         PD::drawBitmap(mainSceneX - backgroundOffset, yOffset, backdrop_img);
         PD::drawBitmap(mainSceneX - backgroundOffset + MAIN_SCENE_IMG_WIDTH, yOffset, backdrop_img);

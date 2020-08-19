@@ -169,7 +169,6 @@ void Game::loop() {
 
         case GAME_STATE_INSTRUCTIONS_INIT:
             instructions_Init();
-            this->gameStateDetails.setCurrState(GAME_STATE_INSTRUCTIONS);
             [[fallthrough]]
 
         case GAME_STATE_INSTRUCTIONS:
@@ -216,6 +215,7 @@ void Game::loop() {
             this->enemy.clear();
             this->gameStateDetails.setCurrState(GAME_STATE_ENTRANCE);
             this->player.setStance(STANCE_ENTRANCE_1);
+            this->readImage(this->imgBuffer, ImageName::Mountain);
             [[fallthrough]];
             // break;
 
