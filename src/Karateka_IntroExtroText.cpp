@@ -146,10 +146,21 @@ const char extroText_Line_06[] = { '1', 'i', 'n', ' ', 't', 'h', 'e', ' ', 's', 
 const char extroText_Line_07[] = { '6', 'b', 'e', 'w', 'a', 'r', 'e', ':', 'f', 'o', 'r', ' ', 't', 'h', 'e', ' ', 'k', 'a', 'r', 'a', 't', 'e', 'k', 'a', '+'  };
 const char extroText_Line_08[] = { '9', '2', 't', 'h', 'e', 'r', 'e', ' ', 'i', 's', ' ', 'a', 'l', 'w', 'a', 'y', 's', ' ', 'a', ' ', 'n', 'e', 'x', 't', '+' };
 const char extroText_Line_09[] = { '9', '9', '9', '9', '9', 't', 'i', 'm', 'e', ' ', '.', '.', '.', '+' };
+const char extroText_Line_10[] = { '#' };
+const char extroText_Line_11[] = { '9', '9', '3', 't', 'h', 'i', 's', ' ','a', 't', 't', 'e', 'm', 'p', 't', ' ', 't', 'o', 'o', 'k', '+' };
+const char extroText_Line_12[] = { '+' };
+const char extroText_Line_13[] = { '+' };
+const char extroText_Line_14[] = { '+' };
+const char extroText_Line_15[] = { '+' };
+const char extroText_Line_16[] = { '9', '6', '3', 't', 'r', 'y', ' ', 'a', 'g', 'a', 'i', 'n', ' ', 'a', 'n', 'd', ' ', 's', 'e', 'e', ' ', 'i', 'f', '+' };
+const char extroText_Line_17[] = { '9', '2', 'y', 'o', 'u', ' ', 'c', 'a', 'n', ' ', 'b', 'e', 'a', 't', ' ', 't', 'h', 'i', 's', ' ', 't', 'i', 'm', 'e', '.', '+' };
 const char extroText_Line_99[] = { '#' };
 
+const char minutes[] = { 12, 8, 13, 20, 19, 4, 18 };
+
 const char * const extroTextLines[] = {extroText_Line_00, extroText_Line_01, extroText_Line_02, extroText_Line_03, extroText_Line_04, extroText_Line_05, extroText_Line_06, 
-                                       extroText_Line_07, extroText_Line_08, extroText_Line_09, extroText_Line_99 };
+                                       extroText_Line_07, extroText_Line_08, extroText_Line_09, extroText_Line_10, extroText_Line_11, extroText_Line_12, extroText_Line_13, 
+                                       extroText_Line_14, extroText_Line_15, extroText_Line_16, extroText_Line_17, extroText_Line_99 };
 
 void Game::extroText() {
 
@@ -158,15 +169,31 @@ void Game::extroText() {
     uint16_t x = 0;
     int16_t y = 6;
 
-    if (PC::buttons.pressed(BTN_A)) this->gameStateDetails.setCurrState(GAME_STATE_FOLLOW_SEQUENCE);
+    if (PC::buttons.pressed(BTN_A)) {
+
+        if (this->stateCounter > 190) {
+            this->gameStateDetails.setCurrState(GAME_STATE_FOLLOW_SEQUENCE);
+        }
+        else {
+            this->stateCounter = 190;
+        }
+
+    }
 
     this->stateCounter++;
 
-    if (this->stateCounter == 190) {
+    if (this->stateCounter == 191) {
+        PD::clearLCD();
+    }
+
+    if (this->stateCounter == 380) {
         this->gameStateDetails.setCurrState(GAME_STATE_FOLLOW_SEQUENCE);
     }
     
-    if (this->stateCounter == 1) {
+    if (this->stateCounter == 1 || this->stateCounter == 191) {
+
+        cy = this->stateCounter == 1 ? 0 : 11; 
+        y = this->stateCounter == 1 ? 0 : 20; 
 
         while (cy < 999) {
 
@@ -236,6 +263,45 @@ void Game::extroText() {
             }
 
             cx = 0;
+
+        }
+
+        if (this->stateCounter == 191) {
+
+            y = 60;
+            x = 62;
+
+            uint32_t sec = (this->timeEnd - this->timeStart) / 1000;
+
+            uint8_t digits[3] = {};
+            extractDigits(digits, sec / 60);
+
+            for (uint8_t i = 2; i > 0; i--) {
+
+                PD::directBitmap(x, y, Images::Number[digits[i - 1]], 4, 1);
+                x = x + Images::Number_Spacing[digits[i - 1]];
+
+            }
+
+            PD::directBitmap(x, y, Images::Number[10], 4, 1);
+            x = x + Images::Number_Spacing[10];
+
+            digits[3] = {};
+            extractDigits(digits, sec % 60);
+
+            for (uint8_t i = 2; i > 0; i--) {
+                PD::directBitmap(x, y, Images::Number[digits[i - 1]], 4, 1);
+                x = x + Images::Number_Spacing[digits[i - 1]];
+
+            }
+
+            y = 62;
+            x = x + 4;
+
+            for (uint8_t z = 0; z < 7; z++) {
+                PD::directBitmap(x, y, Images::Chars[minutes[z]], 4, 1);
+                x = x + Images::Char_Spacing[minutes[z]];
+            }
 
         }
 

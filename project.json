@@ -8154,7 +8154,7 @@
 			"sdcard": false
 		},
 		"/music": {
-			"sdcard": false
+			"sdcard": true
 		},
 		"/music/GameRPGHorror.raw": {
 			"sdcard": false
@@ -24240,7 +24240,7 @@
 			"sdcard": false
 		},
 		"/music/karate05.img": {
-			"sdcard": false
+			"sdcard": true
 		},
 		"/src/images/scenery/Dojo.h": {
 			"sdcard": false
@@ -24255,6 +24255,696 @@
 			"sdcard": false
 		},
 		"/src/images/scenery/Dojo4.h": {
+			"sdcard": false
+		},
+		"/src/images/title/Title_Orig.png": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/safe-buffer": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/safer-buffer": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/iconv-lite": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/sax": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/safe-buffer/LICENSE": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/safe-buffer/README.md": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/safe-buffer/index.d.ts": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/safe-buffer/index.js": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/safer-buffer/LICENSE": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/safe-buffer/package.json": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/safer-buffer/Readme.md": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/safer-buffer/dangerous.js": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/safer-buffer/Porting-Buffer.md": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/safer-buffer/package.json": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/safer-buffer/tests.js": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/iconv-lite/Changelog.md": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/iconv-lite/README.md": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/iconv-lite/LICENSE": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/iconv-lite/encodings": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/iconv-lite/lib": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/iconv-lite/package.json": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/sax/LICENSE": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/sax/lib": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/sax/README.md": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/safer-buffer/safer.js": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/sax/package.json": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/iconv-lite/encodings/dbcs-codec.js": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/iconv-lite/encodings/dbcs-data.js": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/iconv-lite/encodings/internal.js": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/iconv-lite/encodings/index.js": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/iconv-lite/encodings/sbcs-data-generated.js": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/iconv-lite/encodings/sbcs-data.js": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/iconv-lite/encodings/sbcs-codec.js": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/iconv-lite/encodings/tables": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/iconv-lite/encodings/utf16.js": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/iconv-lite/encodings/utf7.js": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/iconv-lite/lib/bom-handling.js": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/iconv-lite/lib/extend-node.js": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/iconv-lite/lib/index.d.ts": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/iconv-lite/lib/index.js": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/iconv-lite/lib/streams.js": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/sax/lib/sax.js": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/iconv-lite/encodings/tables/big5-added.json": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/iconv-lite/encodings/tables/cp936.json": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/iconv-lite/encodings/tables/cp950.json": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/iconv-lite/encodings/tables/cp949.json": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/iconv-lite/encodings/tables/eucjp.json": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/iconv-lite/encodings/tables/gb18030-ranges.json": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/iconv-lite/encodings/tables/gbk-added.json": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/iconv-lite/encodings/tables/shiftjis.json": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/console-control-strings/package.json.1180822590": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/deep-extend/package.json.2810593851": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/fs.realpath/package.json.47756960": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/inherits/package.json.2572253220": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/has-unicode/package.json.2299481757": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/delegates/package.json.2646785583": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/ini/package.json.2837873352": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/mimic-response/package.json.3466596009": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/minimatch/package.json.3088015473": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/brace-expansion/package.json.697640053": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/abbrev/package.json.4039768199": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/ansi-regex/package.json.2387522526": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/aproba/package.json.2679772100": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/balanced-match/package.json.577225211": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/chownr/package.json.2486009024": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/code-point-at/package.json.4096123609": {
+			"sdcard": false
+		},
+		"/src/images/scenery/node_modules/concat-map/package.json.2182481206": {
+			"sdcard": false
+		},
+		"/src/images/scenery/Title.png": {
+			"sdcard": false
+		},
+		"/src/images/scenery/Title.img": {
+			"sdcard": false
+		},
+		"/src/images/scenery/karateka06.img": {
+			"sdcard": false
+		},
+		"/src/images/scenery/karateka01.img": {
+			"sdcard": false
+		},
+		"/music/karateka01.img": {
+			"sdcard": false
+		},
+		"/src/images/title/Title_Orig.h": {
+			"sdcard": false
+		},
+		"/src/images/scenery/Title.h": {
+			"sdcard": false
+		},
+		"/Karateka_Pokitto.bin.5.png": {
+			"sdcard": false
+		},
+		"/Karateka_Pokitto.bin.6.png": {
+			"sdcard": false
+		},
+		"/Karateka_Pokitto.bin.7.png": {
+			"sdcard": false
+		},
+		"/untitled folder/Karateka_Pokitto.bin.1.png": {
+			"sdcard": false
+		},
+		"/untitled folder/Karateka_Pokitto.bin.2.png": {
+			"sdcard": false
+		},
+		"/untitled folder/Karateka_Pokitto.bin.3.png": {
+			"sdcard": false
+		},
+		"/untitled folder/Karateka_Pokitto.bin.4.png": {
+			"sdcard": false
+		},
+		"/untitled folder/Karateka_Pokitto.bin.5.png": {
+			"sdcard": false
+		},
+		"/untitled folder/Karateka_Pokitto.bin.6.png": {
+			"sdcard": false
+		},
+		"/untitled folder/Karateka_Pokitto.bin.7.png": {
+			"sdcard": false
+		},
+		"/Karateka_Pokitto.bin.8.png": {
+			"sdcard": false
+		},
+		"/Karateka_Pokitto.bin.9.png": {
+			"sdcard": false
+		},
+		"/Karateka_Pokitto.bin.10.png": {
+			"sdcard": false
+		},
+		"/Karateka_Pokitto.bin.11.png": {
+			"sdcard": false
+		},
+		"/Karateka_Pokitto.bin.13.png": {
+			"sdcard": false
+		},
+		"/Karateka_Pokitto.bin.14.png": {
+			"sdcard": false
+		},
+		"/Karateka_Pokitto.bin.15.png": {
+			"sdcard": false
+		},
+		"/untitled folder 2": {
+			"sdcard": false
+		},
+		"/untitled folder 2/Karateka_Pokitto.bin.1.png": {
+			"sdcard": false
+		},
+		"/untitled folder 2/Karateka_Pokitto.bin.2.png": {
+			"sdcard": false
+		},
+		"/untitled folder 2/Karateka_Pokitto.bin.3.png": {
+			"sdcard": false
+		},
+		"/untitled folder 2/Karateka_Pokitto.bin.4.png": {
+			"sdcard": false
+		},
+		"/untitled folder 2/Karateka_Pokitto.bin.5.png": {
+			"sdcard": false
+		},
+		"/untitled folder 2/Karateka_Pokitto.bin.6.png": {
+			"sdcard": false
+		},
+		"/untitled folder 2/Karateka_Pokitto.bin.7.png": {
+			"sdcard": false
+		},
+		"/untitled folder 2/Karateka_Pokitto.bin.8.png": {
+			"sdcard": false
+		},
+		"/untitled folder 2/Karateka_Pokitto.bin.9.png": {
+			"sdcard": false
+		},
+		"/untitled folder 2/Karateka_Pokitto.bin.10.png": {
+			"sdcard": false
+		},
+		"/untitled folder 2/Karateka_Pokitto.bin.11.png": {
+			"sdcard": false
+		},
+		"/untitled folder/Karateka_Pokitto.bin.1.h": {
+			"sdcard": false
+		},
+		"/untitled folder/Karateka_Pokitto.bin.2.h": {
+			"sdcard": false
+		},
+		"/untitled folder/Karateka_Pokitto.bin.6.h": {
+			"sdcard": false
+		},
+		"/untitled folder/Karateka_Pokitto.bin.5.h": {
+			"sdcard": false
+		},
+		"/untitled folder/Karateka_Pokitto.bin.7.h": {
+			"sdcard": false
+		},
+		"/untitled folder 2/Karateka_Pokitto.bin.2.h": {
+			"sdcard": false
+		},
+		"/untitled folder 2/Karateka_Pokitto.bin.3.h": {
+			"sdcard": false
+		},
+		"/untitled folder 2/Karateka_Pokitto.bin.4.h": {
+			"sdcard": false
+		},
+		"/untitled folder 2/Karateka_Pokitto.bin.5.h": {
+			"sdcard": false
+		},
+		"/untitled folder 2/Karateka_Pokitto.bin.7.h": {
+			"sdcard": false
+		},
+		"/untitled folder 2/Karateka_Pokitto.bin.6.h": {
+			"sdcard": false
+		},
+		"/untitled folder 2/Karateka_Pokitto.bin.8.h": {
+			"sdcard": false
+		},
+		"/untitled folder 2/Karateka_Pokitto.bin.9.h": {
+			"sdcard": false
+		},
+		"/untitled folder 2/Karateka_Pokitto.bin.10.h": {
+			"sdcard": false
+		},
+		"/untitled folder 2/Karateka_Pokitto.bin.11.h": {
+			"sdcard": false
+		},
+		"/untitled folder/Karateka_Pokitto.bin.3.h": {
+			"sdcard": false
+		},
+		"/untitled folder/Karateka_Pokitto.bin.4.h": {
+			"sdcard": false
+		},
+		"/untitled folder 2/Karateka_Pokitto.bin.1.h": {
+			"sdcard": false
+		},
+		"/untitled folder 2/Karateka_Pokitto.bin.13.png": {
+			"sdcard": false
+		},
+		"/untitled folder 2/Karateka_Pokitto.bin.12.png": {
+			"sdcard": false
+		},
+		"/untitled folder 2/Karateka_Pokitto.bin.14.png": {
+			"sdcard": false
+		},
+		"/untitled folder 2/Karateka_Pokitto.bin.15.png": {
+			"sdcard": false
+		},
+		"/untitled folder 2/Karateka_Pokitto.bin.12.h": {
+			"sdcard": false
+		},
+		"/untitled folder 2/Karateka_Pokitto.bin.13.h": {
+			"sdcard": false
+		},
+		"/untitled folder 2/Karateka_Pokitto.bin.15.h": {
+			"sdcard": false
+		},
+		"/untitled folder 2/Karateka_Pokitto.bin.14.h": {
+			"sdcard": false
+		},
+		"/src/images/font/Char_h copy.png": {
+			"sdcard": false
+		},
+		"/src/images/font/Char_o copy.png": {
+			"sdcard": false
+		},
+		"/src/images/font/Char_0.png": {
+			"sdcard": false
+		},
+		"/src/images/font/Char_2.png": {
+			"sdcard": false
+		},
+		"/src/images/font/Char_2 copy.png": {
+			"sdcard": false
+		},
+		"/src/images/font/Char_3.png": {
+			"sdcard": false
+		},
+		"/src/images/font/Char_3 copy.png": {
+			"sdcard": false
+		},
+		"/src/images/font/Char_4.png": {
+			"sdcard": false
+		},
+		"/src/images/font/Char_4 copy.png": {
+			"sdcard": false
+		},
+		"/src/images/font/Char_5.png": {
+			"sdcard": false
+		},
+		"/src/images/font/Char_5 copy.png": {
+			"sdcard": false
+		},
+		"/src/images/font/Char_6.png": {
+			"sdcard": false
+		},
+		"/src/images/font/Char_1.png": {
+			"sdcard": false
+		},
+		"/src/images/font/Char_7.png": {
+			"sdcard": false
+		},
+		"/src/images/font/Char_8.png": {
+			"sdcard": false
+		},
+		"/src/images/font/Char_9.png": {
+			"sdcard": false
+		},
+		"/src/images/font/Char_0.h": {
+			"sdcard": false
+		},
+		"/src/images/font/Char_2.h": {
+			"sdcard": false
+		},
+		"/src/images/font/Char_4.h": {
+			"sdcard": false
+		},
+		"/src/images/font/Char_3.h": {
+			"sdcard": false
+		},
+		"/src/images/font/Char_5.h": {
+			"sdcard": false
+		},
+		"/src/images/font/Char_6.h": {
+			"sdcard": false
+		},
+		"/src/images/font/Char_1.h": {
+			"sdcard": false
+		},
+		"/src/images/font/Char_7.h": {
+			"sdcard": false
+		},
+		"/src/images/font/Char_9.h": {
+			"sdcard": false
+		},
+		"/src/images/font/Char_8.h": {
+			"sdcard": false
+		},
+		"/src/images/font/Char_colon copy.png": {
+			"sdcard": false
+		},
+		"/src/images/font/Char_colon2.png": {
+			"sdcard": false
+		},
+		"/src/images/font/Char_colon2.h": {
+			"sdcard": false
+		},
+		"/untitled folder/01.png": {
+			"sdcard": false
+		},
+		"/untitled folder/02.png": {
+			"sdcard": false
+		},
+		"/untitled folder/03.png": {
+			"sdcard": false
+		},
+		"/untitled folder/Screenshot01.png": {
+			"sdcard": false
+		},
+		"/untitled folder/Screenshot02.png": {
+			"sdcard": false
+		},
+		"/untitled folder/Screenshot03.png": {
+			"sdcard": false
+		},
+		"/untitled folder 2/Screenshot04.png": {
+			"sdcard": false
+		},
+		"/untitled folder 2/Screenshot05.png": {
+			"sdcard": false
+		},
+		"/untitled folder 2/Screenshot06.png": {
+			"sdcard": false
+		},
+		"/untitled folder 2/Screenshot07.png": {
+			"sdcard": false
+		},
+		"/untitled folder 2/Screenshot08.png": {
+			"sdcard": false
+		},
+		"/untitled folder 2/Screenshot10.png": {
+			"sdcard": false
+		},
+		"/untitled folder 2/Screenshot09.png": {
+			"sdcard": false
+		},
+		"/distibutable/Screenshot01.png": {
+			"sdcard": false
+		},
+		"/distibutable/Screenshot02.png": {
+			"sdcard": false
+		},
+		"/distibutable/Screenshot03.png": {
+			"sdcard": false
+		},
+		"/distibutable/Screenshot04.png": {
+			"sdcard": false
+		},
+		"/distibutable/Screenshot05.png": {
+			"sdcard": false
+		},
+		"/distibutable/Screenshot01.h": {
+			"sdcard": false
+		},
+		"/distibutable/Screenshot02.h": {
+			"sdcard": false
+		},
+		"/distibutable/Screenshot04.h": {
+			"sdcard": false
+		},
+		"/distibutable/Screenshot05.h": {
+			"sdcard": false
+		},
+		"/Karateka.bin": {
+			"sdcard": false
+		},
+		"/distibutable/Karateka_POPBanner.png": {
+			"sdcard": false
+		},
+		"/distibutable/Karateka_Icon_36x36.png": {
+			"sdcard": false
+		},
+		"/distibutable/Karateka_Icon_24x24.png": {
+			"sdcard": false
+		},
+		"/distibutable/project.json": {
+			"sdcard": false
+		},
+		"/distibutable/blurb.txt": {
+			"sdcard": false
+		},
+		"/distibutable/Screenshot03.h": {
+			"sdcard": false
+		},
+		"/distibutable/Karateka_POPBanner.h": {
+			"sdcard": false
+		},
+		"/distibutable/Karateka_Icon_36x36.h": {
+			"sdcard": false
+		},
+		"/distibutable/Karateka_Icon_24x24.h": {
+			"sdcard": false
+		},
+		"/distibutable/Karateka.pop": {
+			"sdcard": false
+		},
+		"/distibutable/music copy": {
+			"sdcard": false
+		},
+		"/distibutable/music copy/karate00.raw": {
+			"sdcard": false
+		},
+		"/distibutable/music copy/karate01.img": {
+			"sdcard": false
+		},
+		"/distibutable/music copy/karate01.raw": {
+			"sdcard": false
+		},
+		"/distibutable/music copy/karate02.img": {
+			"sdcard": false
+		},
+		"/distibutable/music copy/karate02.raw": {
+			"sdcard": false
+		},
+		"/distibutable/music copy/karate03.img": {
+			"sdcard": false
+		},
+		"/distibutable/music copy/karate03.raw": {
+			"sdcard": false
+		},
+		"/distibutable/music copy/karate04.img": {
+			"sdcard": false
+		},
+		"/distibutable/music copy/karate04.raw": {
+			"sdcard": false
+		},
+		"/distibutable/music copy/karate05.img": {
+			"sdcard": false
+		},
+		"/distibutable/music copy/karate05.raw": {
+			"sdcard": false
+		},
+		"/distibutable/music copy/karate06.raw": {
+			"sdcard": false
+		},
+		"/distibutable/music copy/karate07.raw": {
+			"sdcard": false
+		},
+		"/distibutable/music copy/karate09.raw": {
+			"sdcard": false
+		},
+		"/distibutable/music copy/karate11.raw": {
+			"sdcard": false
+		},
+		"/distibutable/music copy/karate17.raw": {
+			"sdcard": false
+		},
+		"/distibutable/music copy/karate18.raw": {
+			"sdcard": false
+		},
+		"/distibutable/music copy/karate16.raw": {
+			"sdcard": false
+		},
+		"/distibutable/music copy/karate19.raw": {
+			"sdcard": false
+		},
+		"/distibutable/music copy/karate20.raw": {
+			"sdcard": false
+		},
+		"/music copy": {
+			"sdcard": false
+		},
+		"/distibutable/Karateka.bin": {
+			"sdcard": false
+		},
+		"/distibutable/Screenshot06.png": {
+			"sdcard": false
+		},
+		"/distibutable/Screenshot07.png": {
+			"sdcard": false
+		},
+		"/distibutable/Screenshot08.png": {
+			"sdcard": false
+		},
+		"/distibutable/Screenshot09.png": {
+			"sdcard": false
+		},
+		"/distibutable/Screenshot10.png": {
+			"sdcard": false
+		},
+		"/distibutable/music/karate03.img": {
+			"sdcard": false
+		},
+		"/distibutable/music/karate04.img": {
+			"sdcard": false
+		},
+		"/distibutable/music/karate05.img": {
+			"sdcard": false
+		},
+		"/distibutable/music/karate20.raw": {
+			"sdcard": false
+		},
+		"/distibutable/Screenshot06.h": {
+			"sdcard": false
+		},
+		"/distibutable/Screenshot07.h": {
+			"sdcard": false
+		},
+		"/distibutable/Screenshot08.h": {
+			"sdcard": false
+		},
+		"/distibutable/Screenshot09.h": {
+			"sdcard": false
+		},
+		"/distibutable/Screenshot10.h": {
+			"sdcard": false
+		},
+		"/src/images/scenery/karate04.img": {
 			"sdcard": false
 		}
 	},

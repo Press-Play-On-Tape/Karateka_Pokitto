@@ -250,12 +250,12 @@ void Game::play_loop() {
 
     // Skip to next scene ..
 
-    if (PC::buttons.pressed(BTN_C) && this->gameStateDetails.getCurrState() != GAME_STATE_TITLE_SCENE) {
+    // if (PC::buttons.pressed(BTN_C) && this->gameStateDetails.getCurrState() != GAME_STATE_TITLE_SCENE) {
 
-        this->gameStateDetails.setCurrState(GAME_STATE_FOLLOW_SEQUENCE);
-        this->player.setStance(STANCE_DEFAULT);
+    //     this->gameStateDetails.setCurrState(GAME_STATE_FOLLOW_SEQUENCE);
+    //     this->player.setStance(STANCE_DEFAULT);
 
-    }
+    // }
 
 
     draw_background();
@@ -450,6 +450,8 @@ void Game::play_loop() {
             }
 
         }
+
+      
 
         // Other sounds ..
 
@@ -857,7 +859,7 @@ void Game::play_loop() {
         this->gameStateDetails.setCurrState(GAME_STATE_THE_END); 
     }
     
-    if (this->enemy.isNormalEnemy() && this->player.isEmpty() && this->enemy.isEmpty() && this->enemy.isDead()) { 
+    if (!this->player.isDead() && this->enemy.isNormalEnemy() && this->player.isEmpty() && this->enemy.isEmpty() && this->enemy.isDead()) { 
         this->gameStateDetails.setCurrState(GAME_STATE_FOLLOW_SEQUENCE); 
     }
 

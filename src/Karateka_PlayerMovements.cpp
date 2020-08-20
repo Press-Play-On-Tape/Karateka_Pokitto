@@ -61,17 +61,18 @@ void Game::playerMovements() {
 
                         // Perform an immediate kick from the default position ..
 
-                        if (PC::buttons.pressed(BTN_RIGHT))  {             // Medium kick ..
-                            this->player.push(STANCE_KICK_MED_END, STANCE_KICK_STANDING_TRANSITION, STANCE_DEFAULT_LEAN_BACK, true);
-                        }
+                        playerMovements_Kick();
+                        // if (PC::buttons.pressed(BTN_RIGHT))  {             // Medium kick ..
+                        //     this->player.push(STANCE_KICK_MED_END, STANCE_KICK_STANDING_TRANSITION, STANCE_DEFAULT_LEAN_BACK, true);
+                        // }
 
-                        else if (PC::buttons.pressed(BTN_UP))  {           // High kick ..
-                            this->player.push(STANCE_KICK_HIGH_END, STANCE_KICK_STANDING_TRANSITION, STANCE_DEFAULT_LEAN_BACK, true);
-                        }
+                        // else if (PC::buttons.pressed(BTN_UP))  {           // High kick ..
+                        //     this->player.push(STANCE_KICK_HIGH_END, STANCE_KICK_STANDING_TRANSITION, STANCE_DEFAULT_LEAN_BACK, true);
+                        // }
 
-                        else if (PC::buttons.pressed(BTN_DOWN))  {         // Low kick ..
-                            this->player.push(STANCE_KICK_LOW_END, STANCE_KICK_STANDING_TRANSITION, STANCE_DEFAULT_LEAN_BACK, true);
-                        }
+                        // else if (PC::buttons.pressed(BTN_DOWN))  {         // Low kick ..
+                        //     this->player.push(STANCE_KICK_LOW_END, STANCE_KICK_STANDING_TRANSITION, STANCE_DEFAULT_LEAN_BACK, true);
+                        // }
 
                     }
                     break;
@@ -108,6 +109,7 @@ void Game::playerMovements() {
                             this->player.setActivity(0);
                         }
 
+                        // playerMovements_Kick();
                         if (PC::buttons.pressed(BTN_RIGHT))  {               // Medium kick ..
                             this->player.push(STANCE_KICK_READY, STANCE_KICK_MED_END, true);
                         }
@@ -507,6 +509,25 @@ void Game::playerMovements_Punch() {
         this->player.push(STANCE_PUNCH_READY, STANCE_DEFAULT_LEAN_BACK, STANCE_SIDLING_3, true);
         this->player.push(STANCE_SIDLING_2, STANCE_SIDLING_1, STANCE_DEFAULT_LEAN_FORWARD, true);
 
+    }
+
+}
+
+void Game::playerMovements_Kick() {
+
+    if (PC::buttons.pressed(BTN_RIGHT))  {             // Medium kick ..
+        this->player.push(STANCE_KICK_MED_END, STANCE_KICK_STANDING_TRANSITION, STANCE_DEFAULT_LEAN_BACK, true);
+        if (this->instructionVariables.instruction == 1) this->instructionVariables.kickMed = true;
+    }
+
+    else if (PC::buttons.pressed(BTN_UP))  {           // High kick ..
+        this->player.push(STANCE_KICK_HIGH_END, STANCE_KICK_STANDING_TRANSITION, STANCE_DEFAULT_LEAN_BACK, true);
+        if (this->instructionVariables.instruction == 1) this->instructionVariables.kickHigh = true;
+    }
+
+    else if (PC::buttons.pressed(BTN_DOWN))  {         // Low kick ..
+        this->player.push(STANCE_KICK_LOW_END, STANCE_KICK_STANDING_TRANSITION, STANCE_DEFAULT_LEAN_BACK, true);
+        if (this->instructionVariables.instruction == 1) this->instructionVariables.kickLow = true;
     }
 
 }

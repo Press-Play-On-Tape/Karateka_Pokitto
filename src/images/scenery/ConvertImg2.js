@@ -33,12 +33,21 @@ h = parseInt(process.argv[4]);
 
 
 if( !file ){
-    console.log("Usage: node gfx.js file.png w h");
+    console.log("Usage: node gfx.js file.png w h output");
 }else{
-    fs.writeFileSync(
-        `${file.replace(/\..*$/, '')}.gfx`,
-        Buffer.from( img4bpp( file, w, h ) )    
-    );
+	if(process.argv[5] == "") {
+		fs.writeFileSync(
+			`${file.replace(/\..*$/, '')}.img`,
+			Buffer.from( img4bpp( file, w, h ) )    
+		);
+	}
+	else {
+		fs.writeFileSync(process.argv[5],
+			Buffer.from( img4bpp( file, w, h ) )    
+		);
+
+	}
+	console.log( `${file.replace(/\..*$/, '')}.img`);
 }
 
 function img4bpp( path, w, h ){

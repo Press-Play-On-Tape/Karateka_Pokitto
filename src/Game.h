@@ -43,6 +43,7 @@ class Game {
         void playerMovements();
         void playerMovements_ContinueRunning(uint16_t distBetween);
         void playerMovements_Punch();
+        void playerMovements_Kick();
         void drawPrincessBackground_1();
         void drawPrincessBackground_2(bool drawDoor);
         void showScene();
@@ -85,6 +86,8 @@ class Game {
 
         uint8_t enemyHit = 0;
         uint8_t playerHit = 0;
+        uint32_t timeStart = 0;
+        uint32_t timeEnd = 0;
 
         uint16_t stateCounter = 0; // Generic
         uint8_t titlePlayerY = 0;

@@ -35,6 +35,19 @@ namespace Images {
     #include "Char_spacer.h"
     #include "Char_border.h"
 
+    #include "Char_0.h"
+    #include "Char_1.h"
+    #include "Char_2.h"
+    #include "Char_3.h"
+    #include "Char_4.h"
+    #include "Char_5.h"
+    #include "Char_6.h"
+    #include "Char_7.h"
+    #include "Char_8.h"
+    #include "Char_9.h"
+    #include "Char_colon2.h"
+
+
     const uint8_t * const Chars[] = { 
         Char_a,
         Char_b,
@@ -101,6 +114,36 @@ namespace Images {
         6,      // Colon
         4,      // Dash
     };
+    
+    
+    const uint8_t * const Number[] = { 
+        Char_0,
+        Char_1,
+        Char_2,
+        Char_3,
+        Char_4,
+        Char_5,
+        Char_6,
+        Char_7,
+        Char_8,
+        Char_9,
+        Char_colon2,
+    };
+
+    const uint8_t Number_Spacing[] = { 
+        8,      // 0
+        4,      // 1
+        8,      // 2
+        7,      // 3
+        7,      // 4
+        8,      // 5
+        8,      // 6
+        8,      // 7
+        8,      // 8
+        9,      // 9
+        3,     // Colon2
+    };
+
 
 };
 

@@ -142,6 +142,7 @@ void Game::loop() {
             PC::setFrameRate(10);
             PD::clearLCD();
             this->gameStateDetails.setCurrState(GAME_STATE_EXTRO_TEXT);
+            this->timeEnd = PC::getTime();
 
             [[fallthrough]];
 
@@ -216,6 +217,7 @@ void Game::loop() {
             this->gameStateDetails.setCurrState(GAME_STATE_ENTRANCE);
             this->player.setStance(STANCE_ENTRANCE_1);
             this->readImage(this->imgBuffer, ImageName::Mountain);
+            this->timeStart = PC::getTime();
             [[fallthrough]];
             // break;
 

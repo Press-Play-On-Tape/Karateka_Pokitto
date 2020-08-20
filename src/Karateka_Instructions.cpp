@@ -108,6 +108,7 @@ void Game::instructions() {
             break;
 
     }
+    PD::setColor(6, 0);
 
     this->player.update();
 
@@ -180,20 +181,21 @@ void Game::instructions() {
 
                         // Perform an immediate kick from the default position ..
 
-                        if (PC::buttons.pressed(BTN_RIGHT))  {             // Medium kick ..
-                            this->player.push(STANCE_KICK_MED_END, STANCE_KICK_STANDING_TRANSITION, STANCE_DEFAULT_LEAN_BACK, true);
-                            if (this->instructionVariables.instruction == 1) this->instructionVariables.kickMed = true;
-                        }
+                        playerMovements_Kick();
+                        // if (PC::buttons.pressed(BTN_RIGHT))  {             // Medium kick ..
+                        //     this->player.push(STANCE_KICK_MED_END, STANCE_KICK_STANDING_TRANSITION, STANCE_DEFAULT_LEAN_BACK, true);
+                        //     if (this->instructionVariables.instruction == 1) this->instructionVariables.kickMed = true;
+                        // }
 
-                        else if (PC::buttons.pressed(BTN_UP))  {           // High kick ..
-                            this->player.push(STANCE_KICK_HIGH_END, STANCE_KICK_STANDING_TRANSITION, STANCE_DEFAULT_LEAN_BACK, true);
-                            if (this->instructionVariables.instruction == 1) this->instructionVariables.kickHigh = true;
-                        }
+                        // else if (PC::buttons.pressed(BTN_UP))  {           // High kick ..
+                        //     this->player.push(STANCE_KICK_HIGH_END, STANCE_KICK_STANDING_TRANSITION, STANCE_DEFAULT_LEAN_BACK, true);
+                        //     if (this->instructionVariables.instruction == 1) this->instructionVariables.kickHigh = true;
+                        // }
 
-                        else if (PC::buttons.pressed(BTN_DOWN))  {         // Low kick ..
-                            this->player.push(STANCE_KICK_LOW_END, STANCE_KICK_STANDING_TRANSITION, STANCE_DEFAULT_LEAN_BACK, true);
-                            if (this->instructionVariables.instruction == 1) this->instructionVariables.kickLow = true;
-                        }
+                        // else if (PC::buttons.pressed(BTN_DOWN))  {         // Low kick ..
+                        //     this->player.push(STANCE_KICK_LOW_END, STANCE_KICK_STANDING_TRANSITION, STANCE_DEFAULT_LEAN_BACK, true);
+                        //     if (this->instructionVariables.instruction == 1) this->instructionVariables.kickLow = true;
+                        // }
 
                     }
                     break;
@@ -230,6 +232,7 @@ void Game::instructions() {
                             this->player.setActivity(0);
                         }
 
+                        // playerMovements_Kick();
                         if (PC::buttons.pressed(BTN_RIGHT))  {               // Medium kick ..
                             this->player.push(STANCE_KICK_READY, STANCE_KICK_MED_END, true);
                             if (this->instructionVariables.instruction == 1) this->instructionVariables.kickMed = true;
@@ -252,24 +255,6 @@ void Game::instructions() {
                 case STANCE_PUNCH_READY:                                  // Really shouldn't happen but if B is pressed before A and both held ..
 
                     playerMovements_Punch();
-
-                    // if (PC::buttons.pressed(BTN_RIGHT))  {             // Medium punch ..
-                    //     this->player.push(STANCE_PUNCH_READY, (this->player.getRightPunch() ? STANCE_PUNCH_MED_RH_END : STANCE_PUNCH_MED_LH_END), true);
-                    //     this->player.setRightPunch(!this->player.getRightPunch());
-                    //     if (this->instructionVariables.instruction == 2) this->instructionVariables.punchMed = true;
-                    // }
-
-                    // else if (PC::buttons.pressed(BTN_UP))  {           // High punch ..
-                    //     this->player.push(STANCE_PUNCH_READY, (this->player.getRightPunch() ? STANCE_PUNCH_HIGH_RH_END : STANCE_PUNCH_HIGH_LH_END), true);
-                    //     this->player.setRightPunch(!this->player.getRightPunch());
-                    //     if (this->instructionVariables.instruction == 2) this->instructionVariables.punchHigh = true;
-                    // }
-
-                    // else if (PC::buttons.pressed(BTN_DOWN))  {         // Low punch ..
-                    //     this->player.push(STANCE_PUNCH_READY, (this->player.getRightPunch() ? STANCE_PUNCH_LOW_RH_END : STANCE_PUNCH_LOW_LH_END), true);
-                    //     this->player.setRightPunch(!this->player.getRightPunch());
-                    //     if (this->instructionVariables.instruction == 2) this->instructionVariables.punchLow = true;
-                    // }
                     break;
 
                 default:
@@ -327,20 +312,6 @@ void Game::instructions() {
                             // Perform a immediate punch from the standing position ..
 
                             playerMovements_Punch();
-                            // if (PC::buttons.pressed(BTN_RIGHT))  {                // Medium punch ..
-                            //     this->player.push(STANCE_PUNCH_MED_RH_END, STANCE_PUNCH_READY, STANCE_DEFAULT_LEAN_BACK, true);
-                            //     if (this->instructionVariables.instruction == 2) this->instructionVariables.punchMed = true;
-                            // }
-
-                            // else if (PC::buttons.pressed(BTN_UP))  {              // High punch ..
-                            //     this->player.push(STANCE_PUNCH_HIGH_RH_END, STANCE_PUNCH_READY, STANCE_DEFAULT_LEAN_BACK, true);
-                            //     if (this->instructionVariables.instruction == 2) this->instructionVariables.punchHigh = true;
-                            // }
-
-                            // else if (PC::buttons.pressed(BTN_UP))  {              // Low punch ..
-                            //     this->player.push(STANCE_PUNCH_LOW_RH_END, STANCE_PUNCH_READY, STANCE_DEFAULT_LEAN_BACK, true);
-                            //     if (this->instructionVariables.instruction == 2) this->instructionVariables.punchLow = true;
-                            // }
 
                         }
 
@@ -358,24 +329,6 @@ void Game::instructions() {
 
                     case STANCE_PUNCH_READY:
 
-                        // if (PC::buttons.pressed(BTN_RIGHT))  {             // Medium punch ..
-                        //     this->player.push(STANCE_PUNCH_READY, (this->player.getRightPunch() ? STANCE_PUNCH_MED_RH_END : STANCE_PUNCH_MED_LH_END), true);
-                        //     this->player.setRightPunch(!this->player.getRightPunch());
-                        //     if (this->instructionVariables.instruction == 2) this->instructionVariables.punchMed = true;
-                        // }
-
-                        // else if (PC::buttons.pressed(BTN_UP))  {           // High punch ..
-                        //     this->player.push(STANCE_PUNCH_READY, (this->player.getRightPunch() ? STANCE_PUNCH_HIGH_RH_END : STANCE_PUNCH_HIGH_LH_END), true);
-                        //     this->player.setRightPunch(!this->player.getRightPunch());
-                        //     if (this->instructionVariables.instruction == 2) this->instructionVariables.punchHigh = true;
-                        // }
-
-                        // else if (PC::buttons.pressed(BTN_DOWN))  {         // Low punch ..
-                        //     this->player.push(STANCE_PUNCH_READY, (this->player.getRightPunch() ? STANCE_PUNCH_LOW_RH_END : STANCE_PUNCH_LOW_LH_END), true);
-                        //     this->player.setRightPunch(!this->player.getRightPunch());
-                        //     if (this->instructionVariables.instruction == 2) this->instructionVariables.punchLow = true;
-                        // }
-                        // break;
                         playerMovements_Punch();
 
                     default:
@@ -391,21 +344,9 @@ void Game::instructions() {
                 switch (this->player.getStance()) {    // If the B Button is no longer being pressed return to the default stance ..
 
                     case STANCE_PUNCH_READY:
-
-                    //     if ((PC::buttons.pressed(BTN_LEFT) || PC::buttons.repeat(BTN_LEFT, 1)) && this->player.getXPosOverall() > 16)  { // Sidle backwards ..
-
-                    //         this->player.setMovement(Movement::Sidle_Backward);
-                    //         this->player.setXPosDelta(MAIN_SCENE_X_SIDLING_2_DELTA); 
-                    //         this->player.push(STANCE_DEFAULT, STANCE_DEFAULT_LEAN_BACK, STANCE_SIDLING_3, true);
-                    //         this->player.push(STANCE_SIDLING_2, STANCE_SIDLING_1, STANCE_DEFAULT_LEAN_FORWARD, true);
-
-                    //     }
-                    //     else {
-                            
-                             this->player.push(STANCE_DEFAULT, STANCE_DEFAULT_LEAN_FORWARD, true);
-
-                    //     }
-                         break;
+                    
+                        this->player.push(STANCE_DEFAULT, STANCE_DEFAULT_LEAN_FORWARD, true);
+                        break;
 
                     case STANCE_PUNCH_HIGH_LH_END:
                     case STANCE_PUNCH_HIGH_RH_END:
