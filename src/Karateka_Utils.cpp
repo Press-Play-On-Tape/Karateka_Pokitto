@@ -15,6 +15,30 @@ uint8_t Game::inStrikingRange(uint8_t action, Entity attacker, Entity target) {
 
     int16_t distBetween = absT(target.getXPos() - attacker.getXPos());
 
+    if (attacker.getEntityType() == EntityType::Emperor || attacker.getEntityType() == EntityType::EnemyThree) {
+
+        uint16_t pos = (action * ACTIONS_NUMBER_OF_STANCES) + target.getStance();
+        uint8_t distance = actions_distance[ pos ] / 4;
+        uint8_t damage = actions_distance[ pos ] & 0x03;
+
+        if (distBetween <= distance) { // A strike!
+
+            if (damage == DAMAGE_MAX_POINTS) {
+
+                return 255;
+
+            }
+            else {
+
+                return damage + (attacker.getEntityType() == EntityType::Emperor ? 1 : random(0, 2));
+                
+            }
+
+        }
+
+        return 0;
+
+    }
     if (target.isNormalEnemy() || target.getEntityType() == EntityType::Player) {
 
         uint16_t pos = (action * ACTIONS_NUMBER_OF_STANCES) + target.getStance();

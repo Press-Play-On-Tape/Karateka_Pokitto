@@ -57,6 +57,9 @@ void Game::instructions() {
             PD::drawBitmap(45, 25, Images::ButtonUp);
             PD::setCursor(57, 27);
             PD::print("Upright");
+            PD::drawBitmap(45, 42, Images::ButtonC);
+            PD::setCursor(57, 44);
+            PD::print("Back to Menu");
             break;
 
         case 1:
@@ -144,11 +147,7 @@ void Game::instructions() {
                 }
                 break;
 
-            case 3:
-                if (PC::buttons.pressed(BTN_C)) {
-                    this->gameStateDetails.setCurrState(GAME_STATE_TITLE_SCENE_INIT);
-                }
-                break;
+            default: break;
                 
         }
 
@@ -182,20 +181,6 @@ void Game::instructions() {
                         // Perform an immediate kick from the default position ..
 
                         playerMovements_Kick();
-                        // if (PC::buttons.pressed(BTN_RIGHT))  {             // Medium kick ..
-                        //     this->player.push(STANCE_KICK_MED_END, STANCE_KICK_STANDING_TRANSITION, STANCE_DEFAULT_LEAN_BACK, true);
-                        //     if (this->instructionVariables.instruction == 1) this->instructionVariables.kickMed = true;
-                        // }
-
-                        // else if (PC::buttons.pressed(BTN_UP))  {           // High kick ..
-                        //     this->player.push(STANCE_KICK_HIGH_END, STANCE_KICK_STANDING_TRANSITION, STANCE_DEFAULT_LEAN_BACK, true);
-                        //     if (this->instructionVariables.instruction == 1) this->instructionVariables.kickHigh = true;
-                        // }
-
-                        // else if (PC::buttons.pressed(BTN_DOWN))  {         // Low kick ..
-                        //     this->player.push(STANCE_KICK_LOW_END, STANCE_KICK_STANDING_TRANSITION, STANCE_DEFAULT_LEAN_BACK, true);
-                        //     if (this->instructionVariables.instruction == 1) this->instructionVariables.kickLow = true;
-                        // }
 
                     }
                     break;
@@ -360,7 +345,7 @@ void Game::instructions() {
 
                     case STANCE_DEFAULT:
 
-                        if (PC::buttons.pressed(BTN_UP))  { // Stand upright again ..
+                        if (PC::buttons.pressed(BTN_UP)) { // Stand upright again ..
                             this->player.push(STANCE_STANDING_UPRIGHT, STANCE_DEFAULT_LEAN_BACK, true);
                             if (this->instructionVariables.instruction == 0) this->instructionVariables.performedUpright = true;
                         }
@@ -369,7 +354,7 @@ void Game::instructions() {
 
                     case STANCE_STANDING_UPRIGHT:
 
-                        if (PC::buttons.pressed(BTN_UP))  { // Bow ..
+                        if (PC::buttons.pressed(BTN_UP)) { // Bow ..
                             this->player.push(STANCE_DEFAULT, STANCE_DEFAULT_LEAN_BACK, true);
                             this->player.push(STANCE_STANDING_UPRIGHT, STANCE_BOW_1, true);
                             this->player.push(STANCE_BOW_2, STANCE_BOW_1, true);
@@ -377,7 +362,7 @@ void Game::instructions() {
                             if (this->instructionVariables.instruction == 0) this->instructionVariables.performedFightReady = true;
                         }
 
-                        if (PC::buttons.pressed(BTN_DOWN))  { // If standing upright, move to the fighting position ..
+                        if (PC::buttons.pressed(BTN_DOWN)) { // If standing upright, move to the fighting position ..
                             this->player.push(STANCE_DEFAULT, STANCE_DEFAULT_LEAN_BACK, true);
                             this->playSoundEffect(SoundEffect::Kiai);
                             if (this->instructionVariables.instruction == 0) this->instructionVariables.performedFightReady = true;
@@ -390,6 +375,12 @@ void Game::instructions() {
             }
 
         }
+
+    }
+
+    if (PC::buttons.pressed(BTN_C)) {
+
+        this->gameStateDetails.setCurrState(GAME_STATE_TITLE_SCENE_INIT);
 
     }
 

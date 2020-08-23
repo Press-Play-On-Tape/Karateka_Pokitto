@@ -24946,6 +24946,9 @@
 		},
 		"/src/images/scenery/karate04.img": {
 			"sdcard": false
+		},
+		"/distibutable/Karateka(1).pop": {
+			"sdcard": false
 		}
 	},
 	"BUILDFlags": {

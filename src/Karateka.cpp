@@ -807,8 +807,8 @@ void Game::play_loop() {
 
         // Let the player and enemy regain some health if they haven't been hit in a while ..
 
-        if (playerHit == 0)     this->player.incRegain();
-        if (enemyHit == 0)      this->enemy.incRegain();
+        if (playerHit == 0 && !this->enemy.isDead())    this->player.incRegain();
+        if (enemyHit == 0)                              this->enemy.incRegain();
 
     }
 

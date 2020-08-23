@@ -1,5 +1,6 @@
 #pragma once
 
+#define IMMEDIATE_ACTION_V_FREQUENT               2
 #define IMMEDIATE_ACTION_FREQUENT                 3
 #define IMMEDIATE_ACTION_NORMAL                   7
 #define IMMEDIATE_ACTION_INFREQUENT               10
@@ -12,6 +13,7 @@
 #define ACTION_KICK_PREF                          1
 #define ACTION_PUNCH_PREF                         2
 
+#define MOVE_FWD_V_FREQUENT                       3
 #define MOVE_FWD_FREQUENT                         5
 #define MOVE_FWD_NORMAL                           8
 #define MOVE_FWD_INFREQUENT                       12

@@ -186,9 +186,9 @@ void Game::extroText() {
         PD::clearLCD();
     }
 
-    if (this->stateCounter == 380) {
-        this->gameStateDetails.setCurrState(GAME_STATE_FOLLOW_SEQUENCE);
-    }
+    // if (this->stateCounter == 380) {
+    //     this->gameStateDetails.setCurrState(GAME_STATE_FOLLOW_SEQUENCE);
+    // }
     
     if (this->stateCounter == 1 || this->stateCounter == 191) {
 
